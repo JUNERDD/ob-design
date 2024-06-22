@@ -7,5 +7,6 @@ export default withNuxt(
   antfu({
     // ...@antfu/eslint-config options
     unocss: true,
+    typescript: true,
   }),
 )
