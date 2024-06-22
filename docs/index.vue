@@ -7,7 +7,7 @@
     <h2 class="text-red-600 font-bold text-4xl">
       OB Design
     </h2>
-    <button class="text-center rounded px-2 py-1">
+    <button>
       hello
     </button>
   </div>
