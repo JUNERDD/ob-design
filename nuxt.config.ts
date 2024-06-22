@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   ],
   css: ['@unocss/reset/tailwind-compat.css'],
   eslint: {
+    checker: true,
     config: {
       stylistic: true,
     },
