@@ -11,6 +11,8 @@ const buttonCVA = cva('btn', {
   variants: {
     size: {
       default: 'bg-red',
+      small: 'bg-blue',
+      large: 'bg-green',
     },
   },
 })
