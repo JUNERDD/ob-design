@@ -1,6 +1,76 @@
 {
-    "cSpell.words": [
-        "Attributify",
-        "unocss"
+  "cSpell.words": [
+    "antfu",
+    "Attributify",
+    "unocss"
+  ],
+  "vscodeGitCommit.insertMode": "Concatenate",
+  "vscodeGitCommit.template": [
+    "{feat}({scope}): {message}"
+  ],
+  "vscodeGitCommit.variables": {
+    "feat": [
+      {
+        "label": "✨ feat",
+        "detail": "     引入新功能"
+      },
+      {
+        "label": "🔨 fix",
+        "detail": "     修复 bug"
+      },
+      {
+        "label": "💄 style",
+        "detail": "     更新 UI 样式文件"
+      },
+      {
+        "label": "🥚 format",
+        "detail": "     格式化代码"
+      },
+      {
+        "label": "📝 docs",
+        "detail": "     添加 / 更新文档"
+      },
+      {
+        "label": "👌 perf",
+        "detail": "     提高性能 / 优化"
+      },
+      {
+        "label": "🎉 init",
+        "detail": "     初次提交 / 初始化项目"
+      },
+      {
+        "label": "✅ test",
+        "detail": "     增加测试代码"
+      },
+      {
+        "label": "🎨 refactor",
+        "detail": "     改进代码结构 / 代码格式"
+      },
+      {
+        "label": "🚑 patch",
+        "detail": "     添加重要补丁"
+      },
+      {
+        "label": "📦 file",
+        "detail": "     添加新文件"
+      },
+      {
+        "label": "🚀 publish",
+        "detail": "     发布新版本"
+      },
+      {
+        "label": "📌 tag",
+        "detail": "     发布新标签"
+      },
+      {
+        "label": "🔧 config",
+        "detail": "     修改配置文件"
+      },
+      {
+        "label": "🙈 git",
+        "detail": "     添加或修改 .gitignore 文件"
+      }
     ]
+  },
+  "commentTranslate.source": "Bing"
 }
