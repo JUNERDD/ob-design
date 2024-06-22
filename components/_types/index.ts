@@ -1,3 +1,6 @@
+/**
+ * Common props - 公共属性
+ */
 export interface ICommonProps {
-  size: string
+  size: 'default' | 'large' | 'small'
 }
