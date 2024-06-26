@@ -7,5 +7,8 @@
     <h2 class="text-4xl text-red-600 font-bold">
       docs
     </h2>
+    <NuxtLink to="/">
+      index
+    </NuxtLink>
   </div>
 </template>
