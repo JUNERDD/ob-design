@@ -2,12 +2,14 @@
 
 <template>
   <div
-    class="flex flex-col h-screen w-screen justify-center gap-3"
+    class="h-screen w-screen flex flex-col items-center justify-center gap-3"
   >
-    <h2 class="text-red-600 font-bold text-4xl">
+    <h2 class="text-4xl text-red-600 font-bold">
       OB Design
     </h2>
 
-    <Button>hello</Button>
+    <Button size="small">
+      hello
+    </Button>
   </div>
 </template>
