@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["antfu", "Attributify", "Booleanish", "unocss"],
+  "cSpell.words": [
+    "antfu",
+    "astro",
+    "Attributify",
+    "Booleanish",
+    "Noto",
+    "unocss"
+  ],
   "vscodeGitCommit.insertMode": "Concatenate",
   "vscodeGitCommit.template": ["{feat}({scope}): {message}"],
   "vscodeGitCommit.variables": {

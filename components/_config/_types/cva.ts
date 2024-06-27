@@ -1,4 +1,5 @@
 import type { ClassProp, ClassValue, StringToBoolean } from 'class-variance-authority/types'
+import type { Keyish } from '.'
 
 /**
  * 如下是cva原生类型（copy this）
@@ -15,3 +16,12 @@ export type Config<T> = T extends ConfigSchema ? {
   defaultVariants?: ConfigVariants<T>
   compoundVariants?: (T extends ConfigSchema ? (ConfigVariants<T> | ConfigVariantsMulti<T>) & ClassProp : ClassProp)[]
 } : never
+
+/**
+ * props map cva - 属性映射cva
+ */
+export type CvaConfig<T> = Config<{
+  [Item in keyof T]?: Record<Item, {
+    [Key in Extract<T[Item], Keyish>]?: ClassValue
+  }>
+}[keyof T]>
