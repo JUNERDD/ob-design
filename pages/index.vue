@@ -8,8 +8,11 @@
       OB Design
     </h2>
 
-    <Button size="small">
-      hello
-    </Button>
+    <ObButton>
+      你好
+    </ObButton>
+    <ObButton size="large">
+      我是按钮2
+    </ObButton>
   </div>
 </template>
