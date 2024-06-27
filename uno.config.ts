@@ -12,6 +12,10 @@ export default defineConfig({
       ],
     },
   },
+  rules: [
+    // temp: content-text-xxx
+    [/^content-text-(.+)$/, match => ({ content: `'${match[1]}'` })],
+  ],
   shortcuts: [
     // ...
   ],
