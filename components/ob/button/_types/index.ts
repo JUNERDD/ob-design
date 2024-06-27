@@ -1,8 +1,8 @@
 import type { ButtonHTMLAttributes } from 'vue'
-import type { ICommonProps } from '../../../_config'
+import type { ICommonProps } from 'ob-config'
 
 /**
- * ObButton - 参数
+ * ObButton - 参数类型
  */
 export interface IButtonProps extends ICommonProps, /* @vue-ignore */ Omit<ButtonHTMLAttributes, 'type'> {
   formType?: ButtonHTMLAttributes['type']

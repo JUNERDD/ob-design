@@ -2,17 +2,39 @@
 
 <template>
   <div
-    class="h-screen w-screen flex flex-col items-center justify-center gap-3"
+    class="h-screen w-screen flex flex-col gap-10 bg-neutral-100 p-10"
   >
-    <h2 class="text-4xl text-red-600 font-bold">
-      OB Design
-    </h2>
+    <h4 class="text-2xl font-bold">
+      OB Design - Dev
+    </h4>
 
-    <ObButton>
-      你好
-    </ObButton>
-    <ObButton size="large">
-      我是按钮2
-    </ObButton>
+    <ObSection title="按钮">
+      <!-- 颜色 -->
+      <ObSectionBlock title="类型">
+        <ObButton>
+          default
+        </ObButton>
+        <ObButton type="primary">
+          primary
+        </ObButton>
+        <ObButton type="info">
+          info
+        </ObButton>
+        ...
+      </ObSectionBlock>
+
+      <!-- 尺寸 -->
+      <ObSectionBlock title="尺寸">
+        <ObButton size="small">
+          small
+        </ObButton>
+        <ObButton>
+          default
+        </ObButton>
+        <ObButton size="large">
+          large
+        </ObButton>
+      </ObSectionBlock>
+    </ObSection>
   </div>
 </template>

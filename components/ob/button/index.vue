@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import _default from './_default'
 import _style from './_style'
 import type { IButtonProps } from './_types'
-import _default from './_default'
 
 // 参数
 const props = withDefaults(defineProps<IButtonProps>(), _default)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PROVIDER_KEY } from '../../_config'
+import { PROVIDER_KEY } from 'ob-config'
 import type { IThemeProps } from './_types'
 
 const props = defineProps<IThemeProps>()
