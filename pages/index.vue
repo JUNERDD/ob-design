@@ -13,6 +13,13 @@ const renderList = useRenderList()
       OB Design - Dev
     </h4>
 
+    <ObTheme>
+      <ObButton>
+        123
+      </ObButton>
+    </ObTheme>
+    <ObButton>123</ObButton>
+
     <!-- 展示区域：此处用uuid生成key是为了在改变组件样式时可以自动热加载 -->
     <ObSection
       v-for="(item) in renderList"

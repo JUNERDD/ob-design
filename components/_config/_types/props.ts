@@ -1,3 +1,4 @@
+import type { ClassValue } from 'class-variance-authority/types'
 import type { Booleanish, NativeType } from '.'
 
 /**
@@ -15,6 +16,7 @@ export interface ICommonProps {
   type?: 'primary' | 'success' | 'info' | 'warning' | 'danger'
   disabled?: Booleanish
   loading?: Booleanish
+  class?: ClassValue
 }
 
 /**

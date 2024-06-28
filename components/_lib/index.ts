@@ -13,7 +13,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /**
- * 构造id
+ * 构造uuid
  */
 export function uuid() {
   return v4()
