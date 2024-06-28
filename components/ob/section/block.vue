@@ -11,7 +11,7 @@ defineProps<ISectionBlockProps>()
         {{ title }}
       </h4>
     </template>
-    <div class="flex gap-2">
+    <div class="flex items-center gap-2">
       <slot />
     </div>
   </div>
