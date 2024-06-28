@@ -11,8 +11,8 @@ export type InferDefaults<T> = { [K in keyof T]?: InferDefault<T, T[K]> }
  * Common props - 公共参数类型
  */
 export interface ICommonProps {
-  size?: 'default' | 'large' | 'small'
-  type?: 'default' | 'primary' | 'success' | 'info' | 'warning' | 'banger'
+  size?: 'small' | 'middle' | 'large'
+  type?: 'primary' | 'success' | 'info' | 'warning' | 'danger'
   disabled?: Booleanish
   loading?: Booleanish
 }

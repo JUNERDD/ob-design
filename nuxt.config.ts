@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   ],
   alias: {
     'ob-config': fileUrlToPath('./components/_config'),
+    'ob-preset': fileUrlToPath('./components/_preset'),
     'ob-lib': fileUrlToPath('./components/_lib'),
     'ob': fileUrlToPath('./components/ob'),
   },
