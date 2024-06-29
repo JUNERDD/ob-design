@@ -1,5 +1,5 @@
-import type { DefaultProps } from 'ob-config'
-import { commonDefaultProps } from 'ob-config'
+import type { DefaultProps } from 'ob-tools'
+import { commonDefaultProps } from 'ob-tools'
 import type { IButtonProps } from '../_types'
 
 /**
@@ -7,4 +7,5 @@ import type { IButtonProps } from '../_types'
  */
 export default <DefaultProps<IButtonProps>> {
   ...commonDefaultProps,
+  formType: 'button',
 }

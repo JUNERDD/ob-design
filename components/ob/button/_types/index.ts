@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from 'vue'
-import type { ICommonProps } from 'ob-config'
+import type { ICommonProps } from 'ob-tools'
 
 /**
  * ObButton - 参数类型

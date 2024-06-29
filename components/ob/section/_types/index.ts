@@ -1,5 +1,5 @@
 import type { HTMLAttributes } from 'vue'
-import type { ICommonProps } from 'ob-config'
+import type { ICommonProps } from 'ob-tools'
 
 /**
  * ObSection - 参数类型

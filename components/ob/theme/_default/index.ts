@@ -1,5 +1,5 @@
-import type { DefaultProps } from 'ob-config'
-import { commonDefaultProps } from 'ob-config'
+import type { DefaultProps } from 'ob-tools'
+import { commonDefaultProps } from 'ob-tools'
 import type { IThemeProps } from '../_types'
 
 /**

@@ -16,6 +16,7 @@
     "@types/uuid": "^10.0.0",
     "@unocss/reset": "^0.61.0",
     "class-variance-authority": "^0.7.0",
+    "klona": "^2.0.6",
     "nuxt": "^3.12.2",
     "uuid": "^10.0.0",
     "vue": "^3.4.29",
