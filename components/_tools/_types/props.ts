@@ -1,3 +1,4 @@
+import type { ClassValue } from 'class-variance-authority/types'
 import type { Booleanish, NativeType } from '.'
 
 /**
@@ -7,14 +8,18 @@ export type LooseRequired<T> = { [P in keyof (T & Required<T>)]: T[P] }
 export type InferDefault<P, T> = ((props: P) => T & object) | (T extends NativeType ? T : never)
 export type InferDefaults<T> = { [K in keyof T]?: InferDefault<T, T[K]> }
 
+export type SizePropsType = 'small' | 'middle' | 'large'
+export type TypePropsType = 'primary' | 'success' | 'info' | 'warning' | 'danger'
+
 /**
  * Common props - 公共参数类型
  */
 export interface ICommonProps {
-  size?: 'small' | 'middle' | 'large'
-  type?: 'primary' | 'success' | 'info' | 'warning' | 'danger'
+  size?: SizePropsType
+  type?: TypePropsType
   disabled?: Booleanish
   loading?: Booleanish
+  class?: ClassValue
 }
 
 /**

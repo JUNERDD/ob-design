@@ -1,4 +1,4 @@
-import { obCva } from 'ob-config'
+import { obCva } from 'ob-tools'
 import type { IButtonProps } from '../_types'
 
 /**

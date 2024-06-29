@@ -7,8 +7,12 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@unocss/nuxt',
   ],
+  components: [
+    { path: './pages-components', prefix: 'page' },
+    { path: './components/ob', prefix: 'ob' },
+  ],
   alias: {
-    'ob-config': fileUrlToPath('./components/_config'),
+    'ob-tools': fileUrlToPath('./components/_tools'),
     'ob-preset': fileUrlToPath('./components/_preset'),
     'ob-lib': fileUrlToPath('./components/_lib'),
     'ob': fileUrlToPath('./components/ob'),
