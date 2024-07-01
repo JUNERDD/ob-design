@@ -7,12 +7,12 @@ import { PageTheme } from '#components'
 export default function useRenderThemeList(): IRenderListItem {
   const blocks: renderOriginArray = [
     ['', '', [
-      { render: PageTheme },
+      { value: 'PageTheme', render: PageTheme },
     ]],
   ]
 
   return {
-    id: 'button',
+    id: 'theme',
     title: '主题控制器',
     blocks,
   }

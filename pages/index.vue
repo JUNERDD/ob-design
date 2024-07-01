@@ -17,18 +17,18 @@ const renderList = useRenderList()
     <ObSection
       v-for="(item) in renderList"
       :id="item.id"
-      :key="uuid(item.id)"
+      :key="item.id"
       :title="item.title"
     >
       <ObSectionBlock
         v-for="[prop, title, child] in item.blocks"
-        :key="uuid(prop)"
+        :key="prop"
         :title
       >
         <component
           :is="render"
           v-for="{ value, label, render } in child"
-          :key="uuid(value)" v-bind="{ [prop]: value }"
+          :key="value" v-bind="{ [prop]: value }"
         >
           {{ label }}
         </component>
