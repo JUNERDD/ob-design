@@ -4,12 +4,12 @@ import type { IButtonProps } from '../_types'
 /**
  * ObButton - 样式
  */
-export default obCva<IButtonProps>('p-(y-1 x-2) rounded-normal font-bold hover:(opacity-80 mix-blend-darken) active:(brightness-90)', {
+export default obCva<IButtonProps>('p-(b-2 t-2.3 x-2.5) rounded-normal font-bold hover:(opacity-80 mix-blend-darken) active:(brightness-90)', {
   variants: {
     size: {
       small: 'text-xs',
-      middle: 'text-base',
-      large: 'text-lg px-3',
+      middle: 'text-sm',
+      large: 'text-lg',
     },
     type: {
       primary: 'bg-primary c-white',
