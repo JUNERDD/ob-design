@@ -9,14 +9,15 @@ export default obCva<IButtonProps>('p-(b-2 t-2.3 x-2.5) rounded-normal font-bold
     size: {
       small: 'text-xs',
       middle: 'text-sm',
-      large: 'text-lg',
+      large: 'text-lg px-3',
     },
-    type: {
+    variant: {
       primary: 'bg-primary c-white',
       success: 'bg-success c-white',
       info: 'bg-mediumGray c-black',
       warning: 'bg-warning c-white',
       danger: 'bg-danger c-white',
+      ghost: ' bg-transparent hover:(bg-mediumGray opacity-100) c-black',
     },
   },
 })

@@ -7,5 +7,5 @@ import type { IButtonProps } from '../_types'
  */
 export default <DefaultProps<IButtonProps>> {
   ...commonDefaultProps,
-  formType: 'button',
+  type: 'button',
 }

@@ -4,6 +4,6 @@ import type { ICommonProps } from 'ob-tools'
 /**
  * ObButton - 参数类型
  */
-export interface IButtonProps extends ICommonProps, /* @vue-ignore */ Omit<ButtonHTMLAttributes, 'type' | 'class'> {
-  formType?: ButtonHTMLAttributes['type']
+export interface IButtonProps extends ICommonProps, /* @vue-ignore */ Omit<ButtonHTMLAttributes, 'class'> {
+  type?: ButtonHTMLAttributes['type']
 }

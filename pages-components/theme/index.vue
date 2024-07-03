@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { TypePropsType } from 'ob-tools'
+import type { VariantPropsType } from 'ob-tools'
 import { uuid } from 'ob-lib'
 
 // 主题类型
-const typeList: { value: TypePropsType, label: string }[] = [
+const typeList: { value: VariantPropsType, label: string }[] = [
   { value: 'primary', label: '主要' },
   { value: 'success', label: '成功' },
   { value: 'warning', label: '警告' },
@@ -12,18 +12,18 @@ const typeList: { value: TypePropsType, label: string }[] = [
 ]
 
 // 类型
-const type = ref<TypePropsType>('primary')
+const variant = ref<VariantPropsType>('primary')
 </script>
 
 <template>
   <div class="w-full flex flex-col items-start gap-2">
     <div class="flex items-center gap-2">
       <span>选择类型：</span>
-      <ObButton v-for="item in typeList" :key="item.value" type="info" size="small" @click="type = item.value">
+      <ObButton v-for="item in typeList" :key="item.value" variant="info" size="small" @click="variant = item.value">
         {{ item.label }}
       </ObButton>
     </div>
-    <ObTheme :key="uuid()" :type>
+    <ObTheme :key="uuid()" :variant>
       <ObButton>
         按钮
       </ObButton>
