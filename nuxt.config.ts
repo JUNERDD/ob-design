@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   ],
   components: [
     { path: './pages-components', prefix: 'page' },
-    { path: './components/ob', prefix: 'ob' },
+    { path: './components/ob', prefix: 'ob', extensions: ['vue'] },
   ],
   alias: {
     'ob-tools': fileUrlToPath('./components/_tools'),

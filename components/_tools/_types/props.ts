@@ -3,6 +3,7 @@ import type { Booleanish, NativeType } from '.'
 
 /**
  * 如下是vue withDefaults的原生类型（copy this）
+ * @see {@link https://github.com/vuejs/core/blob/main/packages/runtime-core/src/apiSetupHelpers.ts}
  */
 export type LooseRequired<T> = { [P in keyof (T & Required<T>)]: T[P] }
 export type InferDefault<P, T> = ((props: P) => T & object) | (T extends NativeType ? T : never)
