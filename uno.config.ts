@@ -1,10 +1,8 @@
 // uno.config.ts
 import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno, presetWebFonts, transformerDirectives, transformerVariantGroup } from 'unocss'
-import { shortcuts, theme } from './components/_preset'
+import obPreset from './components/_preset'
 
 export default defineConfig({
-  shortcuts,
-  theme,
   content: {
     pipeline: {
       include: [
@@ -15,10 +13,6 @@ export default defineConfig({
       ],
     },
   },
-  rules: [
-    // temp: content-text-xxx
-    [/^content-text-(.+)$/, match => ({ content: `'${match[1]}'` })],
-  ],
   presets: [
     presetUno(),
     presetAttributify(),
@@ -29,6 +23,7 @@ export default defineConfig({
         sans: ['Inter', 'Noto Sans SC'],
       },
     }),
+    obPreset(),
   ],
   transformers: [
     transformerDirectives(),

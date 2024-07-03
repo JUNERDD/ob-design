@@ -2,6 +2,7 @@ import { twMerge } from 'tailwind-merge'
 import { cx } from 'class-variance-authority'
 import type { ClassValue } from 'class-variance-authority/types'
 import { v4 } from 'uuid'
+import { noop } from '../_tools/_utils/fns'
 
 /**
  *
@@ -15,6 +16,12 @@ export function cn(...inputs: ClassValue[]) {
 /**
  * 构造uuid
  */
-export function uuid() {
+export function uuid(noopPay?: any) {
+  /**
+   * 利用一个无作用函数确保uuid可接受参数但并不使用
+   * 保证v-for时不报错<key必须时v-for遍历的项>
+   */
+  noop(noopPay)
+
   return v4()
 }

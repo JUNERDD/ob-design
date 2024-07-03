@@ -3,6 +3,7 @@ import type { Keyish } from '.'
 
 /**
  * 如下是cva原生类型（copy this）
+ * @see {@link https://github.com/joe-bell/cva/blob/main/packages/class-variance-authority/src/index.ts}
  */
 export type ConfigSchema = Record<string, Record<string, ClassValue>>
 type ConfigVariants<T extends ConfigSchema> = {

@@ -1,14 +1,12 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <div
-    class="h-screen w-screen flex flex-col justify-center gap-3"
+    class="flex flex-col justify-center gap-3"
   >
-    <h2 class="text-4xl text-red-600 font-bold">
-      docs
-    </h2>
-    <NuxtLink to="/">
-      index
-    </NuxtLink>
+    <ObSpline3d scene-url="https://prod.spline.design/aB6D-I3CO63XSOUn/scene.splinecode">
+      123
+    </ObSpline3d>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { TypePropsType } from 'ob-tools'
+import { uuid } from 'ob-lib'
 
 // 主题类型
 const typeList: { value: TypePropsType, label: string }[] = [
@@ -22,7 +23,7 @@ const type = ref<TypePropsType>('primary')
         {{ item.label }}
       </ObButton>
     </div>
-    <ObTheme :type>
+    <ObTheme :key="uuid()" :type>
       <ObButton>
         按钮
       </ObButton>
