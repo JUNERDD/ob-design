@@ -5,7 +5,7 @@ defineProps<ISectionProps>()
 </script>
 
 <template>
-  <div class="w-full flex flex-col gap-2 overflow-auto" v-bind="$attrs">
+  <div class="w-full flex flex-col gap-2 overflow-auto">
     <NuxtLink :to="`#${$attrs.id}`" class="text-2xl font-bold">
       {{ title }}
     </NuxtLink>

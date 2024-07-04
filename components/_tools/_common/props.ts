@@ -5,5 +5,5 @@ import type { DefaultProps, ICommonProps } from '../_types'
  */
 export const commonDefaultProps: DefaultProps<ICommonProps> = {
   size: 'middle',
-  type: 'primary',
+  variant: 'primary',
 }

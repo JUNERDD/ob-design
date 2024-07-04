@@ -10,14 +10,14 @@ export type InferDefault<P, T> = ((props: P) => T & object) | (T extends NativeT
 export type InferDefaults<T> = { [K in keyof T]?: InferDefault<T, T[K]> }
 
 export type SizePropsType = 'small' | 'middle' | 'large'
-export type TypePropsType = 'primary' | 'success' | 'info' | 'warning' | 'danger'
+export type VariantPropsType = 'primary' | 'success' | 'info' | 'warning' | 'danger' | 'ghost'
 
 /**
  * Common props - 公共参数类型
  */
 export interface ICommonProps {
   size?: SizePropsType
-  type?: TypePropsType
+  variant?: VariantPropsType
   disabled?: Booleanish
   loading?: Booleanish
   class?: ClassValue
