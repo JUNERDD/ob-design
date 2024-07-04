@@ -5,7 +5,7 @@ defineProps<ISectionBlockProps>()
 </script>
 
 <template>
-  <div class="w-full flex flex-col gap-2 overflow-auto" v-bind="$attrs">
+  <div class="w-full flex flex-col gap-2 overflow-auto">
     <template v-if="title">
       <h4 class="flex items-center gap-1 font-bold before:(h-4 w-1 rounded bg-black content-empty)">
         {{ title }}

@@ -1,5 +1,6 @@
 /**
  * ObSpline3d - 参数类型
+ * @see {@link https://github.com/splinetool/react-spline}
  */
 export interface IObSpline3dProps {
   /**

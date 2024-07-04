@@ -7,6 +7,7 @@ import type { Theme } from '../../_tools'
 export const colors: Theme['colors'] = {
   lightGray: '#f9f9f9',
   mediumGray: '#f1f1f1',
+  darkGray: '#838383',
   primary: {
     50: '#f6f6f6',
     100: '#e7e7e7',
