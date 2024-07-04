@@ -4,7 +4,7 @@ import type { ILinkProps } from '../_types'
 /**
  * ObLink - 链接样式
  */
-export default obCva<ILinkProps>('underline decoration-(1.5 offset-3) bg-transparent font-bold hover:(opacity-80) active:(brightness-90)', {
+export default obCva<ILinkProps>('no-underline decoration-(0 offset-3) bg-transparent font-bold hover:(underline opacity-80 decoration-1.5) active:(brightness-90)', {
   variants: {
     size: {
       small: 'text-xs',
