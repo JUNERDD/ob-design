@@ -4,7 +4,7 @@ import type { ICommonProps, Numberish } from 'ob-tools'
 /**
  * ObTabGroup - Label item 类型
  */
-export interface IObTabsLabelItem {
+export interface ITabGroupLabelItem {
   name: any
   value: Numberish
 }
@@ -12,9 +12,9 @@ export interface IObTabsLabelItem {
 /**
  * ObTabGroup - 参数类型
  */
-export interface ITabsProps extends ICommonProps {
+export interface ITabGroupProps extends ICommonProps {
   defaultValue: string
-  labels: IObTabsLabelItem[]
+  labels: ITabGroupLabelItem[]
   boxClass?: ClassValue
   labelClass?: ClassValue
 }
@@ -22,7 +22,7 @@ export interface ITabsProps extends ICommonProps {
 /**
  * ObTabGroup - Label dataset 类型
  */
-export interface IObTabsLabelDataset extends DOMStringMap {
+export interface ITabGroupLabelDataset extends DOMStringMap {
   value: string
   active: string
 }

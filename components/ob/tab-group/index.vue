@@ -2,11 +2,11 @@
 import { cn } from 'ob-lib'
 import type { Numberish } from 'ob-tools'
 import _style, { labelStyle } from './_style'
-import type { IObTabsLabelDataset, ITabsProps } from './_types'
+import type { ITabGroupLabelDataset, ITabGroupProps } from './_types'
 import _default from './_default'
 
 // 参数
-const props = withDefaults(defineProps<ITabsProps>(), _default)
+const props = withDefaults(defineProps<ITabGroupProps>(), _default)
 
 // 活跃值
 const activeValue = ref<Numberish>(props.defaultValue)
@@ -58,7 +58,7 @@ function handleClick(e: MouseEvent) {
   }
 
   // 获取数据属性
-  const dataset = target.dataset as IObTabsLabelDataset
+  const dataset = target.dataset as ITabGroupLabelDataset
 
   // 更新活跃值
   activeValue.value = dataset.value
@@ -69,7 +69,7 @@ function handleClick(e: MouseEvent) {
 
 <template>
   <div
-    :class="cn(_style(), isLoad && 'before:(transition-transform visible)', props.boxClass)"
+    :class="cn('before-box', _style(), isLoad && 'before:(transition-transform visible)', props.boxClass)"
     @click="handleClick"
   >
     <button

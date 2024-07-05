@@ -1,10 +1,10 @@
-import type { ITabsProps } from '../_types'
-import type { DefaultProps } from '~/components/_tools'
-import { commonDefaultProps } from '~/components/_tools'
+import type { DefaultProps } from 'ob-tools'
+import { commonDefaultProps } from 'ob-tools'
+import type { ITabGroupProps } from '../_types'
 
 /**
  * ObTabGroup - 参数默认值
  */
-export default <DefaultProps<ITabsProps>> {
+export default <DefaultProps<ITabGroupProps>> {
   ...commonDefaultProps,
 }
