@@ -1,11 +1,11 @@
 import type { IRenderListItem, renderOriginArray } from './_types'
-import { ObTabs } from '#components'
+import { ObButton } from '#components'
 
 /**
  * 渲染Tabs列表
  */
 export default function useRenderTabsList(): IRenderListItem {
-  const render = ObTabs
+  const render = ObButton
 
   const blocks: renderOriginArray = [
     ['size', '尺寸', [

@@ -1,6 +1,6 @@
-import type { DefaultProps } from 'ob-tools'
-import { commonDefaultProps } from 'ob-tools'
 import type { ITabsProps } from '../_types'
+import type { DefaultProps } from '~/components/_tools'
+import { commonDefaultProps } from '~/components/_tools'
 
 /**
  * ObTabs - 参数默认值

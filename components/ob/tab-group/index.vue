@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { cn } from 'ob-lib'
-import _default from './_default'
+import _style, { labelStyle } from './_style'
 import type { IObTabsLabelDataset, ITabsProps } from './_types'
+import _default from './_default'
 
 // 参数
 const props = withDefaults(defineProps<ITabsProps>(), _default)
@@ -73,14 +74,14 @@ function handleClick(e: MouseEvent) {
 
 <template>
   <div
-    :class="cn('before-box relative flex gap-2 rounded-2xl bg-lightGray p-1.5 text-sm font-bold before:(absolute left-0 rounded-xl bg-black content-empty)', isLoad && 'before:transition-transform', props.boxClass)"
+    :class="cn(_style(), isLoad && 'before:transition-transform', props.boxClass)"
     @click="handleClick"
   >
     <button
       v-for="tab in tabs"
       :key="tab.value"
       ref="labelRef"
-      :class="cn('z-1 min-w-15 rounded-xl bg-transparent p-(x-2.5 b-2 t-2.3) c-black transition-colors data-[active=true]:(bg-primary c-white)', isLoad && 'data-[active=true]:bg-transparent', props.labelClass)"
+      :class="cn(labelStyle(), isLoad && 'data-[active=true]:bg-transparent', props.labelClass)"
       :data-value="tab.value"
       :data-active="activeValue === tab.value"
     >

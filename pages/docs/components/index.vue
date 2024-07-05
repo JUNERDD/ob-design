@@ -19,7 +19,8 @@ const renderList = useRenderList()
     </h4>
 
     <div class="flex-center bg-white p-y-10">
-      <ObTabs default-value="1" />
+      <!-- <ObTabs2 default-value="1" /> -->
+      <ObTabGroup default-value="1" />
     </div>
 
     <ObSection

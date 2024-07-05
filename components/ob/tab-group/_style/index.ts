@@ -1,5 +1,5 @@
-import { obCva } from 'ob-tools'
 import type { ITabsProps } from '../_types'
+import { obCva } from '~/components/_tools'
 
 /**
  * ObTabs - 样式
