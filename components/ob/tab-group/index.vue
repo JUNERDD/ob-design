@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { cn } from 'ob-lib'
+import type { Numberish } from 'ob-tools'
 import _style, { labelStyle } from './_style'
 import type { IObTabsLabelDataset, ITabsProps } from './_types'
 import _default from './_default'
@@ -8,13 +9,7 @@ import _default from './_default'
 const props = withDefaults(defineProps<ITabsProps>(), _default)
 
 // 活跃值
-const activeValue = ref<string | number>(props.defaultValue)
-
-const tabs = ref([
-  { name: '首页', value: '0' },
-  { name: '文档', value: '1' },
-  { name: '组件', value: '2' },
-])
+const activeValue = ref<Numberish>(props.defaultValue)
 
 // 判断是否加载完成
 const isLoad = ref(false)
@@ -46,11 +41,11 @@ function changeOffset() {
 onMounted(() => {
   changeOffset()
 
-  // 延时加载
+  // 将指示器加载放入宏任务
   const timer = setTimeout(() => {
     isLoad.value = true
     clearTimeout(timer)
-  }, 150)
+  }, 0)
 })
 
 // 点击label
@@ -74,18 +69,18 @@ function handleClick(e: MouseEvent) {
 
 <template>
   <div
-    :class="cn(_style(), isLoad && 'before:transition-transform', props.boxClass)"
+    :class="cn(_style(), isLoad && 'before:(transition-transform visible)', props.boxClass)"
     @click="handleClick"
   >
     <button
-      v-for="tab in tabs"
-      :key="tab.value"
+      v-for="label in props.labels"
+      :key="label.value"
       ref="labelRef"
       :class="cn(labelStyle(), isLoad && 'data-[active=true]:bg-transparent', props.labelClass)"
-      :data-value="tab.value"
-      :data-active="activeValue === tab.value"
+      :data-value="label.value"
+      :data-active="activeValue === label.value"
     >
-      {{ tab.name }}
+      {{ label.name }}
     </button>
   </div>
 </template>

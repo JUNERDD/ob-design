@@ -8,6 +8,12 @@ definePageMeta({
 
 // 按钮
 const renderList = useRenderList()
+
+const labels = ref([
+  { name: '首页', value: '0' },
+  { name: '文档', value: '1' },
+  { name: '组件', value: '2' },
+])
 </script>
 
 <template>
@@ -19,8 +25,9 @@ const renderList = useRenderList()
     </h4>
 
     <div class="flex-center bg-white p-y-10">
-      <!-- <ObTabs2 default-value="1" /> -->
-      <ObTabGroup default-value="1" />
+      <ObTabGroup
+        default-value="2" :labels
+      />
     </div>
 
     <ObSection
