@@ -1,6 +1,11 @@
 <script setup>
 import { uuid } from 'ob-lib'
 
+// 目前阶段关闭布局
+definePageMeta({
+  layout: false,
+})
+
 // 按钮
 const renderList = useRenderList()
 </script>
@@ -12,6 +17,10 @@ const renderList = useRenderList()
     <h4 class="text-2xl font-bold">
       OB Design - Dev
     </h4>
+
+    <div class="flex-center bg-white p-y-10">
+      <ObTabs default-value="1" />
+    </div>
 
     <ObSection
       v-for="item in renderList"
