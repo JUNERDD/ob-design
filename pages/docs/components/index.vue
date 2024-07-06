@@ -1,5 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import { uuid } from 'ob-lib'
+import type { ITabGroupLabelItem } from 'ob/tab-group/_types'
 
 // 目前阶段关闭布局
 definePageMeta({
@@ -9,7 +10,9 @@ definePageMeta({
 // 按钮
 const renderList = useRenderList()
 
-const labels = ref([
+const value = ref('2')
+
+const labels = ref<ITabGroupLabelItem[]>([
   { name: '首页', value: '0' },
   { name: '文档', value: '1' },
   { name: '组件', value: '2' },
@@ -25,12 +28,12 @@ const labels = ref([
     </h4>
 
     <div class="flex-center bg-white p-y-10">
-      <ObTabGroup
-        default-value="2" :labels
-      >
-        <template #label-0="aka">
-          <div>{{ aka }}</div>
-          <div>{{ aka }}1</div>
+      <ObTabGroup v-model="value" default-value="1" :labels>
+        <template #label="a">
+          {{ a.label.value }}
+        </template>
+        <template #label-1="a">
+          {{ a.label.name }}
         </template>
       </ObTabGroup>
     </div>

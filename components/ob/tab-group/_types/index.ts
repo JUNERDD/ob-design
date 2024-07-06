@@ -1,19 +1,20 @@
 import type { ClassValue } from 'class-variance-authority/types'
-import type { ICommonProps, Numberish } from 'ob-tools'
+import type { ICommonProps } from 'ob-tools'
 
 /**
  * ObTabGroup - Label item 类型
  */
 export interface ITabGroupLabelItem {
   name: any
-  value: Numberish
+  value: string
 }
 
 /**
  * ObTabGroup - 参数类型
  */
 export interface ITabGroupProps extends ICommonProps {
-  defaultValue: string
+  defaultValue?: string
+  modelValue?: string
   labels: ITabGroupLabelItem[]
   boxClass?: ClassValue
   labelClass?: ClassValue
@@ -30,6 +31,7 @@ export interface ITabGroupLabelDataset extends DOMStringMap {
 /**
  * ObTabGroup - 插槽类型
  */
-export interface ITabGroupSlot {
-  [key: `label-${string}`]: (props: { label: ITabGroupLabelItem }) => string
+export interface ITabGroupSlot<T = ITabGroupLabelItem> {
+  label: (props: { label: T }) => string
+  [key: `label-${string}`]: (props: { label: T }) => string
 }
