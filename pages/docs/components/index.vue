@@ -27,7 +27,12 @@ const labels = ref([
     <div class="flex-center bg-white p-y-10">
       <ObTabGroup
         default-value="2" :labels
-      />
+      >
+        <template #label-0="aka">
+          <div>{{ aka }}</div>
+          <div>{{ aka }}1</div>
+        </template>
+      </ObTabGroup>
     </div>
 
     <ObSection

@@ -2,7 +2,7 @@ import { twMerge } from 'tailwind-merge'
 import { cx } from 'class-variance-authority'
 import type { ClassValue } from 'class-variance-authority/types'
 import { v4 } from 'uuid'
-import { noop } from '../_tools/_utils/fns'
+import { noop } from 'ob-tools'
 
 /**
  *

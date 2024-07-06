@@ -26,3 +26,10 @@ export interface ITabGroupLabelDataset extends DOMStringMap {
   value: string
   active: string
 }
+
+/**
+ * ObTabGroup - 插槽类型
+ */
+export interface ITabGroupSlot {
+  [key: `label-${string}`]: (props: { label: ITabGroupLabelItem }) => string
+}

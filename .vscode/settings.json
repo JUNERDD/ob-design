@@ -8,7 +8,8 @@
     "klona",
     "Noto",
     "splinetool",
-    "unocss"
+    "unocss",
+    "vueuse"
   ],
   "vscodeGitCommit.insertMode": "Concatenate",
   "vscodeGitCommit.template": ["{feat}({scope}): {message}"],
