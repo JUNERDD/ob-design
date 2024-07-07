@@ -20,7 +20,7 @@ const items: ITabGroupLabelItem [] = [
     </NuxtLink>
 
     <!-- tab -->
-    <ObTabGroup v-model="tabValue" :items />
+    <ObTabGroup v-model="tabValue" :items router />
 
     <!-- search -->
     <div class="flex flex-1 justify-end">

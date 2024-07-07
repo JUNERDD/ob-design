@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { cn } from 'ob-lib'
 import { useThrottle } from 'ob-tools'
+import { RouterLink } from 'vue-router'
 import _style, { labelStyle } from './_style'
 import type { ITabGroupLabelDataset, ITabGroupProps, ITabGroupSlot } from './_types'
 import _default from './_default'
@@ -19,8 +20,17 @@ if (!props.items) {
   throw new Error('😱oh, items 参数 必传！')
 }
 
+// 判断是否是路由模式
+const route = useRoute()
+
+const renderCpn = computed(() => props.router ? RouterLink : 'button')
+const getCpnProps = (value: string) => (props.router ? { to: value } : {})
+
+// 基本默认活跃值
+const defaultActive = computed(() => model.value ?? props.defaultValue ?? props.items[0].value)
+
 // 活跃值
-const activeValue = ref(model.value ?? props.defaultValue ?? props.items[0].value)
+const activeValue = ref(props.router ? route.path : defaultActive.value)
 
 // 发射活跃值更新事件
 watch(activeValue, value => model.value = value)
@@ -29,7 +39,7 @@ watch(activeValue, value => model.value = value)
 const isLoad = ref(false)
 
 // 标签ref
-const labelRef = ref<HTMLButtonElement[]>([])
+const labelRef = ref<HTMLButtonElement[] | InstanceType<typeof RouterLink>[]>([])
 
 // 指示器偏移量
 const beforeStyle = reactive({
@@ -41,23 +51,34 @@ const beforeStyle = reactive({
 // 更改偏移量
 function changeOffset() {
   // 获取活跃标签
-  const target = labelRef.value.find(item => item.dataset.value === activeValue.value)
+  const target = labelRef.value.find((item: any) => {
+    // 判断是否是路由模式
+    if (props.router) {
+      return item.$el.dataset.value === activeValue.value
+    }
+
+    return item.dataset.value === activeValue.value
+  })
+
   if (!target) {
     return
   }
 
-  beforeStyle.offsetLeft = `${target.offsetLeft}px`
-  beforeStyle.height = `${target.offsetHeight}px`
-  beforeStyle.width = `${target.offsetWidth}px`
+  // 获取节点
+  const targetNode = (target as any).$el || target
+
+  beforeStyle.offsetLeft = `${targetNode.offsetLeft}px`
+  beforeStyle.height = `${targetNode.offsetHeight}px`
+  beforeStyle.width = `${targetNode.offsetWidth}px`
 }
 
 // 点击label
 function handleClick(e: MouseEvent) {
   const target = e.target as HTMLElement
-  const buttonEl = target.closest(`.label-box > button[data-value]`) as HTMLButtonElement
+  const buttonEl = target.closest(`.label-box > [data-value]`) as HTMLButtonElement | HTMLLinkElement
 
   // 如果点击的不是标签，返回
-  if (!buttonEl || !labelRef.value.includes(buttonEl)) {
+  if (!buttonEl || !labelRef.value?.find((item: any) => (item.$el || item) === buttonEl)) {
     return
   }
 
@@ -114,7 +135,9 @@ onUnmounted(() => {
     :class="cn('label-box', _style(), isLoad && 'before:(transition-all visible)', props.boxClass)"
     @click="handleClick"
   >
-    <button
+    <component
+      :is="renderCpn"
+      v-bind="getCpnProps(item.value)"
       v-for="item in props.items"
       :key="item.value"
       ref="labelRef"
@@ -135,7 +158,7 @@ onUnmounted(() => {
           {{ item.label }}
         </slot>
       </template>
-    </button>
+    </component>
   </div>
 
   <!-- 值 -->
