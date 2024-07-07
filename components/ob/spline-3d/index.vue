@@ -21,14 +21,16 @@ onMounted(async () => {
   emit('ready')
 })
 
+onUnmounted(() => {
+  app.value?.stop()
+})
+
 defineExpose({ app })
 </script>
 
 <template>
-  <section>
-    <canvas v-show="!!app" ref="canvas" />
+  <canvas v-show="!!app" ref="canvas" v-bind="canvasProps" />
 
-    <!-- 加载中 -->
-    <slot v-if="!app" />
-  </section>
+  <!-- 加载中 -->
+  <slot v-if="!app" />
 </template>

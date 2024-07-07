@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>
-    1
+  <div class="w-full flex flex-col justify-center gap-3">
+    <HomeWelcome />
   </div>
 </template>

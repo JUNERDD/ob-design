@@ -1,14 +1,10 @@
-<script setup lang="ts">
+<script setup>
 </script>
 
 <template>
   <div
-    class="max-w-screen min-h-screen flex flex-col gap-10 bg-neutral-100 p-10 font-sans"
+    class="flex flex-col justify-center gap-3"
   >
-    <h4 class="text-2xl font-bold">
-      OB Design - Dev
-    </h4>
-
-    11
+    docs/components
   </div>
 </template>

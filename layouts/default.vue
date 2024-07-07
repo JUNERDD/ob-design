@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="w-screen flex-center-i flex-col gap-8 bg-white p-8 c-black font-sans">
+  <div class="w-full flex-center-i flex-col bg-white c-black font-sans">
     <!-- 顶部 -->
     <LayoutTop />
 
