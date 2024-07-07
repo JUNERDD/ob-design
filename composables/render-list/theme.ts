@@ -1,5 +1,5 @@
 import type { IRenderListItem, renderOriginArray } from './_types'
-import { PageTheme } from '#components'
+import { DocsTheme } from '#components'
 
 /**
  * 渲染主题控制器
@@ -7,7 +7,7 @@ import { PageTheme } from '#components'
 export default function useRenderThemeList(): IRenderListItem {
   const blocks: renderOriginArray = [
     ['', '', [
-      { value: 'PageTheme', render: PageTheme },
+      { value: 'PageTheme', render: DocsTheme },
     ]],
   ]
 

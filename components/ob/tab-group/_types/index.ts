@@ -1,5 +1,5 @@
 import type { ClassValue } from 'class-variance-authority/types'
-import type { ICommonProps } from 'ob-tools'
+import type { Booleanish, ICommonProps } from 'ob-tools'
 
 /**
  * ObTabGroup - Label item 类型
@@ -15,10 +15,10 @@ export interface ITabGroupLabelItem {
  */
 export interface ITabGroupProps extends ICommonProps {
   defaultValue?: string
-  modelValue?: string
   items: ITabGroupLabelItem[]
   boxClass?: ClassValue
   labelClass?: ClassValue
+  router?: Booleanish
 }
 
 /**
