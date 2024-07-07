@@ -1,5 +1,5 @@
 import type { IRenderListItem, renderOriginArray } from './_types'
-import { PageTabGroup } from '#components'
+import { DocsTabGroup } from '#components'
 
 /**
  * 渲染TabGroup列表
@@ -7,7 +7,7 @@ import { PageTabGroup } from '#components'
 export default function useRenderTabGroupList(): IRenderListItem {
   const blocks: renderOriginArray = [
     ['', '', [
-      { value: 'PageTabGroup', render: PageTabGroup },
+      { value: 'PageTabGroup', render: DocsTabGroup },
     ]],
   ]
 

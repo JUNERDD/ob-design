@@ -3,9 +3,15 @@
 </script>
 
 <template>
-  <div class="min-h-screen min-w-screen flex flex-col gap-10 bg-neutral-100 p-10 font-sans">
-    <p>Some default layout content shared across all pages</p>
+  <div class="w-screen flex-center-i flex-col gap-8 bg-white p-8 c-black font-sans">
+    <!-- 顶部 -->
+    <LayoutTop />
+
+    <!-- 主体 -->
     <slot />
+
+    <!-- 底部 -->
+    <LayoutBottom />
   </div>
 </template>
 

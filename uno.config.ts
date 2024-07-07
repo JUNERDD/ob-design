@@ -20,7 +20,7 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: ['Inter', 'Noto Sans SC'],
+        sans: ['Inter:400,700,900', 'Noto Sans SC'],
       },
     }),
     obPreset(),

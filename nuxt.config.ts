@@ -3,13 +3,15 @@ const fileUrlToPath = (url: string) => new URL(url, import.meta.url).pathname
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/eslint',
-    '@unocss/nuxt',
-  ],
+  runtimeConfig: {
+    public: {
+      splineWelcomeUrl: '',
+    },
+  },
+  modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image'],
   components: [
-    { path: './pages-components', prefix: 'page' },
-    { path: './components/ob', prefix: 'ob', extensions: ['vue'] },
+    { path: '~/components/ob', prefix: 'ob', extensions: ['vue'] },
+    '~/custom-components',
   ],
   alias: {
     'ob-tools': fileUrlToPath('./components/_tools'),

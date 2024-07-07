@@ -15,7 +15,6 @@ export interface ITabGroupLabelItem {
  */
 export interface ITabGroupProps extends ICommonProps {
   defaultValue?: string
-  modelValue?: string
   items: ITabGroupLabelItem[]
   boxClass?: ClassValue
   labelClass?: ClassValue

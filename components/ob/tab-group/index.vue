@@ -8,17 +8,22 @@ import _default from './_default'
 // 参数
 const props = withDefaults(defineProps<ITabGroupProps>(), _default)
 
-// 发射事件
-const emit = defineEmits(['update:modelValue'])
-
 // 定义插槽内容
 const slots = defineSlots<ITabGroupSlot>()
 
+// 定义双向绑定
+const model = defineModel()
+
+// 定义错误信息
+if (!props.items) {
+  throw new Error('😱oh, items 参数 必传！')
+}
+
 // 活跃值
-const activeValue = ref(props.modelValue ?? props.defaultValue ?? props.items[0].value)
+const activeValue = ref(model.value ?? props.defaultValue ?? props.items[0].value)
 
 // 发射活跃值更新事件
-watch(activeValue, value => emit('update:modelValue', value))
+watch(activeValue, value => model.value = value)
 
 // 判断是否加载完成
 const isLoad = ref(false)

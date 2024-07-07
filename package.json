@@ -13,6 +13,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/image": "^1.7.0",
     "@splinetool/runtime": "^1.8.1",
     "@types/uuid": "^10.0.0",
     "@unocss/reset": "^0.61.0",
