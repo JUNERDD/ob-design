@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div class="h-4xl w-full">
-    <ObSpline3d :scene-url="$config.public.splineWelcomeUrl">
+  <div class="mt-4 h-4xl w-full">
+    <ObSpline3d :scene-url="$config.public.splineUnderDevelopmentUrl">
       123
     </ObSpline3d>
   </div>

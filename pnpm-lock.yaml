@@ -45,6 +45,12 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.21.1
         version: 2.21.1(@unocss/eslint-plugin@0.61.0(eslint@9.5.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.29)(eslint@9.5.0)(typescript@5.4.5)
+      '@iconify-json/icon-park-solid':
+        specifier: ^1.1.14
+        version: 1.1.14
+      '@iconify-json/simple-icons':
+        specifier: ^1.1.108
+        version: 1.1.108
       '@nuxt/eslint':
         specifier: ^0.3.13
         version: 0.3.13(eslint@9.5.0)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.7)(@unocss/reset@0.61.0)(encoding@0.1.13)(eslint@9.5.0)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29(typescript@5.4.5)))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.0)(terser@5.31.1)(typescript@5.4.5)(unocss@0.61.0(@unocss/webpack@0.61.0(rollup@4.18.0)(webpack@5.92.1(esbuild@0.21.5)))(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.7)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.7)(terser@5.31.1)))(rollup@4.18.0)(typescript@5.4.5)(vite-plugin-eslint2@4.4.0(@types/eslint@8.56.10)(eslint@9.5.0)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.7)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.7)(terser@5.31.1))
@@ -676,6 +682,12 @@ packages:
   '@humanwhocodes/retry@0.3.0':
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/icon-park-solid@1.1.14':
+    resolution: {integrity: sha512-oXV3KoGjd6vyOArhhumrCAuvG9+1G4+FHQEy76WbnU6lDoir8jnkGyDxmMTfmz831eHCUXC/pqnS1Gr0TfEPUg==}
+
+  '@iconify-json/simple-icons@1.1.108':
+    resolution: {integrity: sha512-GeC0Oy3j385BgjI0TadEzVbzM/cYjvAot22hJLNal3wKLmf/8t6RtH2PgRiNaK+SxELeDYdSAHocXxw4QoKXYA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -5667,6 +5679,14 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.0': {}
+
+  '@iconify-json/icon-park-solid@1.1.14':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.1.108':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/types@2.0.0': {}
 

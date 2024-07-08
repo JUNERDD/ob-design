@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
+    "@iconify-json/icon-park-solid": "^1.1.14",
+    "@iconify-json/simple-icons": "^1.1.108",
     "@nuxt/eslint": "^0.3.13",
     "@unocss/eslint-plugin": "^0.61.0",
     "@unocss/nuxt": "^0.61.0",

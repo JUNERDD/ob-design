@@ -21,7 +21,7 @@ onMounted(async () => {
   emit('ready')
 })
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   app.value?.stop()
 })
 
