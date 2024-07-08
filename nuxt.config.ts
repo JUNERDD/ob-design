@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       splineWelcomeUrl: '',
+      splineUnderDevelopmentUrl: '',
     },
   },
   modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image'],

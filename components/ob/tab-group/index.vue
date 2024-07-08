@@ -139,16 +139,16 @@ onUnmounted(() => {
   <!-- 标签 -->
   <div
     ref="labelBoxRef"
-    :class="cn('label-box', _style(styleProps), isLoad && 'before:(transition-all visible)', props.boxClass)"
+    :class="cn('label-box', _style(styleProps), isLoad && 'before:(transition-all visible)', boxClass)"
     @click="handleClick"
   >
     <component
       :is="renderCpn"
       v-bind="getCpnProps(item.value)"
-      v-for="item in props.items"
+      v-for="item in items"
       :key="item.value"
       ref="labelRef"
-      :class="cn(labelStyle(styleProps), isLoad && 'data-[active=true]:bg-transparent', props.labelClass)"
+      :class="cn(labelStyle(styleProps), isLoad && 'data-[active=true]:bg-transparent', labelClass)"
       :data-value="item.value"
       :data-active="activeValue === item.value"
     >
