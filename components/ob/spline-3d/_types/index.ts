@@ -10,7 +10,7 @@ export interface IObSpline3dProps {
    */
   sceneUrl: string
   /**
-   * 可以是：
+   * 渲染模式，可以是：
    * - `auto` 运行时尝试仅在必要时渲染（默认）。
    * - `manual` 仅在调用 spline.requestRender() 时渲染。
    * - `continuous` 持续渲染，每帧一次。
