@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { cn } from 'ob-lib'
-import { useThrottle } from 'ob-tools'
+import { useMergeStyleProps, useTheme, useThrottle } from 'ob-tools'
 import { RouterLink } from 'vue-router'
 import _style, { labelStyle } from './_style'
 import type { ITabGroupLabelDataset, ITabGroupProps, ITabGroupSlot } from './_types'
@@ -20,9 +20,16 @@ if (!props.items) {
   throw new Error('😱oh, items 参数 必传！')
 }
 
+// 主题
+const theme = useTheme()
+
+// 样式
+const styleProps = useMergeStyleProps(_default, props, theme)
+
 // 判断是否是路由模式
 const route = useRoute()
 
+// 定义渲染组件
 const renderCpn = computed(() => props.router ? RouterLink : 'button')
 const getCpnProps = (value: string) => (props.router ? { to: value } : {})
 
@@ -132,7 +139,7 @@ onUnmounted(() => {
   <!-- 标签 -->
   <div
     ref="labelBoxRef"
-    :class="cn('label-box', _style(), isLoad && 'before:(transition-all visible)', props.boxClass)"
+    :class="cn('label-box', _style(styleProps), isLoad && 'before:(transition-all visible)', props.boxClass)"
     @click="handleClick"
   >
     <component
@@ -141,7 +148,7 @@ onUnmounted(() => {
       v-for="item in props.items"
       :key="item.value"
       ref="labelRef"
-      :class="cn(labelStyle(), isLoad && 'data-[active=true]:bg-transparent', props.labelClass)"
+      :class="cn(labelStyle(styleProps), isLoad && 'data-[active=true]:bg-transparent', props.labelClass)"
       :data-value="item.value"
       :data-active="activeValue === item.value"
     >
