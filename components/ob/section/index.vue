@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type { ISectionProps } from './_types'
 
+// 定义组件名
+defineOptions({ name: 'ObSection' })
+
 defineProps<ISectionProps>()
 </script>
 

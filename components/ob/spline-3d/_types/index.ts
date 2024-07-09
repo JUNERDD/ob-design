@@ -26,5 +26,5 @@ export interface IObSpline3dProps {
  * ObSpline3d - 事件类型
  */
 export interface IObSpline3dEmits {
-  (e: 'ready'): void
+  (e: 'load'): void
 }

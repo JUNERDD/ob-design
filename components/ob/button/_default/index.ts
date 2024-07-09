@@ -8,4 +8,5 @@ import type { IButtonProps } from '../_types'
 export default <DefaultProps<IButtonProps>> {
   ...commonDefaultProps,
   type: 'button',
+  title: '按钮',
 }

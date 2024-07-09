@@ -5,6 +5,9 @@ import _default from './_default'
 import type { ICardProps } from './_types'
 import _style, { contentBoxStyle, iconBoxStyle, iconStyle, textStyle, titleStyle } from './_style'
 
+// 定义组件名
+defineOptions({ name: 'ObCard' })
+
 // 参数
 const props = withDefaults(defineProps<ICardProps>(), _default)
 
@@ -19,7 +22,9 @@ const styleProps = useMergeStyleProps(_default, props, theme)
   <div :class="cn(_style(styleProps), props.class)">
     <!-- 图标 -->
     <div :class="cn(iconBoxStyle, iconBoxClass)">
-      <div :class="cn(iconStyle, icon, iconClass)" />
+      <slot name="icon">
+        <i :class="cn(iconStyle, icon, iconClass)" />
+      </slot>
     </div>
 
     <!-- 标题 -->

@@ -20,11 +20,13 @@ const items: ITabGroupLabelItem [] = [
     </NuxtLink>
 
     <!-- tab -->
-    <ObTabGroup v-model="tabValue" :items router />
+    <ObTabGroup v-model="tabValue" class="lt-sm:hidden" :items router />
 
     <!-- search -->
     <div class="flex flex-1 justify-end">
-      <ObButton>搜索</ObButton>
+      <ObButton icon>
+        <i class="lt-sm:i-icon-park-solid:list-one sm:i-icon-park-solid:search" />
+      </ObButton>
     </div>
   </div>
 </template>
