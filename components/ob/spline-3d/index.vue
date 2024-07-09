@@ -15,6 +15,11 @@ const emit = defineEmits<IObSpline3dEmits>()
 const canvas = ref<null | HTMLCanvasElement>(null)
 const app = ref<null | Application>(null)
 
+// 存储属性
+const appConfig = reactive({
+  size: { width: 0, height: 0 },
+})
+
 onMounted(async () => {
   if (!canvas.value) {
     return
@@ -24,10 +29,26 @@ onMounted(async () => {
   await spline.load(props.sceneUrl)
   app.value = spline
 
-  emit('ready')
+  emit('load')
 })
 
 onBeforeUnmount(() => {
+  app.value?.stop()
+})
+
+onActivated(() => {
+  if (!app.value) {
+    return
+  }
+
+  app.value?.setSize(appConfig.size.width, appConfig.size.height)
+  app.value?.play()
+})
+
+onDeactivated(() => {
+  appConfig.size.width = canvas.value?.width ?? 0
+  appConfig.size.height = canvas.value?.height ?? 0
+
   app.value?.stop()
 })
 
