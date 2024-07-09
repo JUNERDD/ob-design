@@ -5,6 +5,9 @@ import _default from './_default'
 import type { ICardProps } from './_types'
 import _style, { contentBoxStyle, iconBoxStyle, iconStyle, textStyle, titleStyle } from './_style'
 
+// 定义组件名
+defineOptions({ name: 'ObCard' })
+
 // 参数
 const props = withDefaults(defineProps<ICardProps>(), _default)
 

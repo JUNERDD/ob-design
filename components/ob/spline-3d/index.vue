@@ -2,10 +2,16 @@
 import { Application } from '@splinetool/runtime'
 import type { IObSpline3dEmits, IObSpline3dProps } from './_types'
 
+// 定义组件名
+defineOptions({ name: 'ObSpline3d' })
+
+// 参数
 const props = defineProps<IObSpline3dProps>()
 
+// 事件
 const emit = defineEmits<IObSpline3dEmits>()
 
+// 实例对象
 const canvas = ref<null | HTMLCanvasElement>(null)
 const app = ref<null | Application>(null)
 

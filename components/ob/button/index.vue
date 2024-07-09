@@ -5,6 +5,9 @@ import _default from './_default'
 import _style from './_style'
 import type { IButtonProps } from './_types'
 
+// 定义组件名
+defineOptions({ name: 'ObButton' })
+
 // 参数
 const props = withDefaults(defineProps<IButtonProps>(), _default)
 

@@ -5,6 +5,9 @@ import _default from './_default'
 import _style from './_style'
 import type { ILinkProps } from './_types'
 
+// 定义组件名
+defineOptions({ name: 'ObLink' })
+
 // 参数
 const props = withDefaults(defineProps<ILinkProps>(), _default)
 

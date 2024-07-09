@@ -6,6 +6,9 @@ import _style, { labelStyle } from './_style'
 import type { ITabGroupLabelDataset, ITabGroupProps, ITabGroupSlot } from './_types'
 import _default from './_default'
 
+// 定义组件名
+defineOptions({ name: 'ObTabGroup' })
+
 // 参数
 const props = withDefaults(defineProps<ITabGroupProps>(), _default)
 

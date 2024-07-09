@@ -1,10 +1,11 @@
 <script setup lang="ts">
+defineOptions({ name: 'HomeWelcome' })
 </script>
 
 <template>
-  <div class="h-4xl w-full lt-lg:h-2xl lt-md:h-md">
+  <div class="h-4xl w-full flex-center lt-lg:h-2xl lt-md:h-md">
     <ObSpline3d :scene-url="$config.public.splineWelcomeUrl">
-      123
+      <ObSpin />
     </ObSpline3d>
   </div>
 </template>

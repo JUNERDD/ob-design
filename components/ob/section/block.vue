@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type { ISectionBlockProps } from './_types'
 
+// 定义组件名
+defineOptions({ name: 'ObSectionBlock' })
+
 defineProps<ISectionBlockProps>()
 </script>
 
