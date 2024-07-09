@@ -9,12 +9,12 @@ export default obCva<ICardProps>('p-6 flex flex-col gap-5 rounded-max bg-lightGr
 /**
  * ObCard - iconBox 样式
  */
-export const iconBoxStyle = 'p-2 bg-primary rounded-small aspect-square'
+export const iconBoxStyle = 'w-8 flex justify-center items-center bg-primary rounded-small c-white aspect-square'
 
 /**
  * ObCard - icon 样式
  */
-export const iconStyle = 'c-white'
+export const iconStyle = ''
 
 /**
  * ObCard - contentBox 样式
