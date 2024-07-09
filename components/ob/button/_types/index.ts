@@ -9,4 +9,12 @@ export interface IButtonProps extends ICommonProps, /* @vue-ignore */ Omit<Butto
    * 元素按钮表单类型
    */
   type?: ButtonHTMLAttributes['type']
+  /**
+   * 是否是图标按钮
+   */
+  icon?: boolean
+  /**
+   * 标题
+   */
+  title?: string
 }

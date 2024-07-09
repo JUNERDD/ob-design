@@ -24,7 +24,9 @@ const items: ITabGroupLabelItem [] = [
 
     <!-- search -->
     <div class="flex flex-1 justify-end">
-      <ObButton>搜索</ObButton>
+      <ObButton icon>
+        <i class="i-icon-park-solid:search" />
+      </ObButton>
     </div>
   </div>
 </template>

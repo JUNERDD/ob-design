@@ -16,7 +16,14 @@ const styleProps = useMergeStyleProps(_default, props, theme)
 </script>
 
 <template>
-  <button :class="cn(_style(styleProps), props.class)">
+  <button :title :type :class="cn(_style(styleProps), props.class)">
+    <!-- 前面插槽 -->
+    <slot name="before" />
+
+    <!-- 主内容 -->
     <slot />
+
+    <!-- 后面插槽 -->
+    <slot name="after" />
   </button>
 </template>

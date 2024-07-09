@@ -20,7 +20,7 @@ const styleProps = useMergeStyleProps(_default, props, theme)
     <!-- 图标 -->
     <div :class="cn(iconBoxStyle, iconBoxClass)">
       <slot name="icon">
-        <div :class="cn(iconStyle, icon, iconClass)" />
+        <i :class="cn(iconStyle, icon, iconClass)" />
       </slot>
     </div>
 
