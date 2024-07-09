@@ -4,7 +4,7 @@ import type { ICardProps } from '../_types'
 /**
  * ObCard - 样式
  */
-export default obCva<ICardProps>('p-6 flex flex-col gap-5 rounded-max bg-lightGray items-start')
+export default obCva<ICardProps>('p-6 flex flex-col gap-5 rounded-max border border-mediumGray bg-lightGray items-start')
 
 /**
  * ObCard - iconBox 样式
