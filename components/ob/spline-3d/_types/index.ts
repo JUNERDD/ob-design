@@ -16,10 +16,6 @@ export interface IObSpline3dProps {
    * - `continuous` 持续渲染，每帧一次。
    */
   renderMode?: 'auto' | 'manual' | 'continuous'
-  /**
-   * canvas 属性
-   */
-  canvasProps?: CanvasHTMLAttributes
 }
 
 /**

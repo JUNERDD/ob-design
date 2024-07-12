@@ -36,6 +36,7 @@
     "tailwind-merge": "^2.4.0",
     "typescript": "5.5.3",
     "unocss": "^0.61.3",
+    "unocss-preset-animations": "^1.1.0",
     "vite-plugin-eslint2": "^4.4.0"
   }
 }

@@ -32,8 +32,8 @@ onMounted(async () => {
   emit('load')
 })
 
-onBeforeUnmount(() => {
-  app.value?.stop()
+onUnmounted(() => {
+  app.value?.dispose()
 })
 
 onActivated(() => {
@@ -56,7 +56,7 @@ defineExpose({ app })
 </script>
 
 <template>
-  <canvas v-show="!!app" ref="canvas" v-bind="canvasProps" />
+  <canvas v-show="!!app" ref="canvas" v-bind="$attrs" />
 
   <!-- 加载中 -->
   <slot v-if="!app" />

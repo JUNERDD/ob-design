@@ -1,5 +1,5 @@
 <template>
   <NuxtLayout>
-    <NuxtPage :keepalive="{ include: 'PageIndex' }" />
+    <NuxtPage />
   </NuxtLayout>
 </template>

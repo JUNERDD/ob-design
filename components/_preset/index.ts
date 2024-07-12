@@ -1,5 +1,6 @@
 import type { PresetOptions } from 'unocss'
 import { definePreset, presetIcons, presetUno, presetWebFonts } from 'unocss'
+import presetAnimations from 'unocss-preset-animations'
 import shortcuts from './shortcuts'
 import theme from './theme'
 import rules from './rules'
@@ -32,6 +33,7 @@ const obPreset = definePreset((options?: PresetObOptions) => {
           sans: ['Inter:400,700,900', 'Noto Sans SC'],
         },
       }),
+      presetAnimations(),
     ],
   }
 })
