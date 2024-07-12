@@ -14,6 +14,9 @@ export default defineNuxtConfig({
     { path: '~/components/ob', prefix: 'ob', extensions: ['vue'] },
     '~/custom-components',
   ],
+  vite: {
+    assetsInclude: ['**/*.splinecode'],
+  },
   alias: {
     'ob-tools': fileUrlToPath('./components/_tools'),
     'ob-preset': fileUrlToPath('./components/_preset'),
@@ -33,4 +36,5 @@ export default defineNuxtConfig({
       title: 'OB Design - Dev',
     },
   },
+  compatibilityDate: '2024-07-12',
 })

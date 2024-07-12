@@ -1,5 +1,5 @@
 import type { PresetOptions } from 'unocss'
-import { definePreset } from 'unocss'
+import { definePreset, presetIcons, presetUno, presetWebFonts } from 'unocss'
 import shortcuts from './shortcuts'
 import theme from './theme'
 import rules from './rules'
@@ -18,12 +18,21 @@ export interface PresetObOptions extends PresetOptions {
  */
 const obPreset = definePreset((options?: PresetObOptions) => {
   return {
-    name: 'ob-design/preset',
+    name: '@ob-design/preset',
     theme,
     shortcuts,
     rules,
     options,
     prefix: options?.prefix,
+    presets: [
+      presetUno(),
+      presetIcons(),
+      presetWebFonts({
+        fonts: {
+          sans: ['Inter:400,700,900', 'Noto Sans SC'],
+        },
+      }),
+    ],
   }
 })
 

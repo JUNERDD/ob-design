@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno, presetWebFonts, transformerDirectives, transformerVariantGroup } from 'unocss'
+import { defineConfig, transformerDirectives, transformerVariantGroup } from 'unocss'
 import obPreset from './components/_preset'
 
 export default defineConfig({
@@ -15,15 +15,6 @@ export default defineConfig({
     },
   },
   presets: [
-    presetUno(),
-    presetAttributify(),
-    presetIcons(),
-    presetTypography(),
-    presetWebFonts({
-      fonts: {
-        sans: ['Inter:400,700,900', 'Noto Sans SC'],
-      },
-    }),
     obPreset(),
   ],
   transformers: [

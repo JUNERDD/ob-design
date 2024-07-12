@@ -14,28 +14,28 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
-    "@splinetool/runtime": "^1.8.9",
-    "@types/uuid": "^10.0.0",
-    "@unocss/reset": "^0.61.0",
+    "@splinetool/runtime": "^1.9.0",
+    "@unocss/reset": "^0.61.3",
     "@vueuse/core": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "klona": "^2.0.6",
-    "nuxt": "^3.12.2",
+    "nuxt": "^3.12.3",
     "uuid": "^10.0.0",
-    "vue": "^3.4.29",
-    "vue-router": "^4.3.3"
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.1",
+    "@antfu/eslint-config": "^2.22.0",
     "@iconify-json/icon-park-solid": "^1.1.14",
-    "@iconify-json/simple-icons": "^1.1.108",
+    "@iconify-json/simple-icons": "^1.1.109",
     "@nuxt/eslint": "^0.3.13",
-    "@unocss/eslint-plugin": "^0.61.0",
-    "@unocss/nuxt": "^0.61.0",
-    "eslint": "^9.5.0",
-    "tailwind-merge": "^2.3.0",
-    "typescript": "5.4",
-    "unocss": "^0.61.0",
+    "@types/uuid": "^10.0.0",
+    "@unocss/eslint-plugin": "^0.61.3",
+    "@unocss/nuxt": "^0.61.3",
+    "eslint": "^9.6.0",
+    "tailwind-merge": "^2.4.0",
+    "typescript": "5.5.3",
+    "unocss": "^0.61.3",
     "vite-plugin-eslint2": "^4.4.0"
   }
 }

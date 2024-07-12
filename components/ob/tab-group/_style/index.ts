@@ -4,7 +4,7 @@ import type { ITabGroupProps } from '../_types'
 /**
  * ObTabGroup - 样式
  */
-export default obCva<ITabGroupProps>('relative flex gap-2 rounded-large bg-lightGray p-1.5 font-bold before:(absolute invisible left-0 rounded-xl content-empty transition-none)', {
+export default obCva<ITabGroupProps>('relative flex gap-2 rounded-large bg-lightGray p-1.5 font-bold before:(absolute invisible left-0 rounded-xl content-empty transition-all)', {
   variants: {
     size: {
       small: 'text-xs',
