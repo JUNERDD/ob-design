@@ -145,7 +145,9 @@ onMounted(() => {
 
   // 监听子元素变化
   observer.value = new MutationObserver(debounceChangeOffset)
-  labelBoxRef.value && observer.value?.observe(labelBoxRef.value, { childList: true, subtree: true })
+  if (labelBoxRef.value) {
+    observer.value?.observe(labelBoxRef.value, { childList: true, subtree: true })
+  }
 
   // 在DOM更新结束之后更新指示器的动画
   setTimeout(() => {

@@ -36,4 +36,5 @@ export default defineNuxtConfig({
       title: 'OB Design - Dev',
     },
   },
+  compatibilityDate: '2024-07-12',
 })
