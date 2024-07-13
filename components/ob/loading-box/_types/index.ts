@@ -1,3 +1,4 @@
+import type { ClassValue } from 'class-variance-authority/types'
 import type { ISpinProps } from 'ob/spin/_types'
 import type { TransitionProps } from 'vue'
 
@@ -6,9 +7,9 @@ import type { TransitionProps } from 'vue'
  */
 export interface ILoadingBoxProps {
   /**
-   * 是否是绝对定位模式
+   * 是否是蒙版模式
    */
-  absolute?: boolean
+  maskMode?: boolean
   /**
    * 自定义 Spin 参数
    */
@@ -17,4 +18,23 @@ export interface ILoadingBoxProps {
    * 自定义 transition 参数
    */
   transitionProps?: TransitionProps
+  /**
+   * 自定义Spin样式
+   */
+  spinClass?: ClassValue
+  /**
+   * 自定义遮罩盒子样式
+   */
+  maskBoxClass?: ClassValue
+  /**
+   * 自定义遮罩样式
+   */
+  maskClass?: ClassValue
+}
+
+/**
+ * ObLoadingBox - 插槽类型
+ */
+export interface ILoadingBoxSlots {
+  default: () => any
 }

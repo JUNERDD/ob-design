@@ -9,4 +9,5 @@ export default <DefaultProps<IButtonProps>> {
   ...commonDefaultProps,
   type: 'button',
   title: '按钮',
+  full: false,
 }
