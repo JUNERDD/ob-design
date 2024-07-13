@@ -30,4 +30,9 @@ export default <UserShortcuts>[
       return map[ct][m === '-d' ? 1 : 0]
     },
   ],
+  [
+    // 添加加载状态
+    /^loading-box$/,
+    () => 'relative before:(content-text-loading... visible absolute left-0 top-0 h-full w-full flex items-center justify-center c-white transition-all duration-1000)',
+  ],
 ]

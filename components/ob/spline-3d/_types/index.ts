@@ -1,5 +1,3 @@
-import type { CanvasHTMLAttributes } from 'vue'
-
 /**
  * ObSpline3d - 参数类型
  * @see {@link https://github.com/splinetool/react-spline}
