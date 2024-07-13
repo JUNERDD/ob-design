@@ -17,4 +17,10 @@ export interface IButtonProps extends ICommonProps, /* @vue-ignore */ Omit<Butto
    * 标题
    */
   title?: string
+  /**
+   * 是否为撑满宽度
+   * - `true` 撑满宽度
+   * - `false` 不撑满宽度
+   */
+  full?: boolean
 }
