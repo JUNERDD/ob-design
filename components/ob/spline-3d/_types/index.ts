@@ -1,5 +1,3 @@
-import type { CanvasHTMLAttributes } from 'vue'
-
 /**
  * ObSpline3d - 参数类型
  * @see {@link https://github.com/splinetool/react-spline}
@@ -16,10 +14,6 @@ export interface IObSpline3dProps {
    * - `continuous` 持续渲染，每帧一次。
    */
   renderMode?: 'auto' | 'manual' | 'continuous'
-  /**
-   * canvas 属性
-   */
-  canvasProps?: CanvasHTMLAttributes
 }
 
 /**
