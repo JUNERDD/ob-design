@@ -24,3 +24,9 @@ logs
 !.env.example
 
 .eslintcache
+
+# turbo
+.turbo
+
+# vercel
+.vercel
