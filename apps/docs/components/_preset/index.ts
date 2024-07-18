@@ -29,7 +29,7 @@ const obPreset = definePreset((options?: PresetObOptions) => {
       presetIcons(),
       presetWebFonts({
         fonts: {
-          sans: ['Inter:400,700,900', 'Noto Sans SC'],
+          // sans: ['Inter:400,700,900', 'Noto Sans SC'],
         },
       }),
     ],
