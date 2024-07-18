@@ -1,6 +1,6 @@
-import ObDesign from '~/components'
+// import ObDesign from '~/components'
 
-export default defineNuxtPlugin((nuxtApp) => {
-  const app = nuxtApp.vueApp
-  app.use(ObDesign)
-})
+// export default defineNuxtPlugin((nuxtApp) => {
+//   const app = nuxtApp.vueApp
+//   app.use(ObDesign)
+// })

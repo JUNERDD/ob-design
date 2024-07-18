@@ -1,4 +1,4 @@
-<script setup name="IndexPage">
+<script setup>
 defineOptions({ name: 'PageIndex' })
 </script>
 
