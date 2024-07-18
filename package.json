@@ -1,41 +1,12 @@
 {
-  "name": "nuxt-app",
+  "name": "root",
   "type": "module",
-  "private": true,
-  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
+  "version": "0.0.1",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --host --port 8899",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "dev": "pnpm -C ./docs run dev",
+    "build": "pnpm -C ./docs run build"
   },
-  "dependencies": {
-    "@nuxt/image": "^1.7.0",
-    "@splinetool/runtime": "^1.9.0",
-    "@unocss/reset": "^0.61.5",
-    "@vueuse/core": "^10.11.0",
-    "class-variance-authority": "^0.7.0",
-    "klona": "^2.0.6",
-    "nuxt": "^3.12.3",
-    "uuid": "^10.0.0",
-    "vue": "^3.4.31",
-    "vue-router": "^4.4.0"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.22.4",
-    "@iconify-json/icon-park-solid": "^1.1.14",
-    "@iconify-json/simple-icons": "^1.1.109",
-    "@nuxt/eslint": "^0.3.13",
-    "@types/uuid": "^10.0.0",
-    "@unocss/eslint-plugin": "^0.61.5",
-    "@unocss/nuxt": "^0.61.5",
-    "eslint": "^9.7.0",
-    "tailwind-merge": "^2.4.0",
-    "typescript": "5.5.3",
-    "unocss": "^0.61.5",
-    "vite-plugin-eslint2": "^4.4.0"
-  }
+  "private": true,
+  "author": "JUNER",
+  "license": "ISC"
 }
