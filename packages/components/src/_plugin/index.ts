@@ -1,10 +1,10 @@
 import type { App } from 'vue'
-// import Spin from 'ob/spin/index.vue'
+// import Spin from 'ob-design'
 
 /**
  * Ob-Design vue 插件
  */
-export default function ObDesign(app: App<Element>) {
+export function ObDesignPlugin(app: App<Element>) {
   const getClass = (value: boolean) => value ? ['before:visible', 'before:bg-red'] : ['before:invisible', 'before:bg-black', 'before:opacity-0']
 
   app.directive('loading', {

@@ -1,0 +1,25 @@
+{
+  "name": "ob-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splinetool/runtime": "^1.9.0",
+    "@vueuse/core": "^10.11.0",
+    "class-variance-authority": "^0.7.0",
+    "klona": "^2.0.6",
+    "unocss": "^0.61.5",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@unocss/webpack": "^0.61.5",
+    "tailwind-merge": "^2.4.0"
+  }
+}
