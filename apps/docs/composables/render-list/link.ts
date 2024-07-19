@@ -1,5 +1,5 @@
+import { ObLink } from '@ob-design/components'
 import type { IRenderListItem, renderOriginArray } from './_types'
-import { ObLink } from '#components'
 
 /**
  * 渲染链接列表

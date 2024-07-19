@@ -1,4 +1,6 @@
 <script setup>
+import { ObButton, ObLoadingBox } from '@ob-design/components'
+
 const isLoad = ref(true)
 </script>
 

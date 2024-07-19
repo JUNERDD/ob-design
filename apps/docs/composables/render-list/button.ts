@@ -1,5 +1,5 @@
+import { ObButton } from '@ob-design/components'
 import type { IRenderListItem, renderOriginArray } from './_types'
-import { ObButton } from '#components'
 
 /**
  * 渲染按钮列表

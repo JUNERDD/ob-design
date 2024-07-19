@@ -1,6 +1,6 @@
 // uno.config.ts
-import { defineConfig, transformerDirectives, transformerVariantGroup } from 'unocss'
-import obPreset from './components/_preset'
+import { defineConfig, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
+import obPreset from '@ob-design/preset'
 
 export default defineConfig({
   content: {
@@ -9,12 +9,14 @@ export default defineConfig({
         // the default
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
         // include js/ts files
-        'components/**/*.{js,ts}',
         'composables/**/*.{js,ts}',
+        '../../packages/components/**/*.{js,ts}',
       ],
     },
   },
   presets: [
+    presetUno(),
+    presetIcons(),
     obPreset(),
   ],
   transformers: [

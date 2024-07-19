@@ -1,5 +1,5 @@
 import type { Component } from 'vue'
-import type { Obj } from 'ob-tools'
+import type { Obj } from '@ob-design/components'
 
 // 渲染列表原始数据类型
 export type renderOriginArray = [string, string, { label?: string, value: any, render: Component, otherProps?: Obj }[]][]
