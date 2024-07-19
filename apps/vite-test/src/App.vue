@@ -22,7 +22,9 @@ const isLoad = ref(true)
       按钮
     </ObButton>
 
-    <ObTabGroup v-model="tabValue" class="lt-sm:hidden" :items />
+    <Suspense>
+      <ObTabGroup v-model="tabValue" class="lt-sm:hidden" :items />
+    </Suspense>
 
     <div class="flex flex-col items-center justify-center gap-3">
       <div class="relative h-40 w-120 overflow-hidden border rounded-2xl">

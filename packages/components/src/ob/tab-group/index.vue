@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineAsyncComponent, computed, ref, watch, reactive, onMounted, onUnmounted } from 'vue'
 import { cn, useMergeStyleProps, useTheme, useThrottle } from '../../index'
-import type { _RouterLinkI } from '../../index'
+import type { _RouterLinkI, RouteLocationNormalizedLoaded } from '../../index'
 import _style, { labelStyle } from './_style'
 import _default from './_default'
 import type { ITabGroupLabelDataset, ITabGroupProps, ITabGroupSlot } from './_types'
@@ -31,8 +31,7 @@ const styleProps = useMergeStyleProps(_default, props, theme)
 
 // 判断是否是路由模式并懒加载组件和路由对象
 let Link: _RouterLinkI | undefined = void 0
-// let route: RouteLocationNormalizedLoaded | null = null
-let route: any = null
+let route: RouteLocationNormalizedLoaded | null = null
 if (props.router) {
   // 导入路由组件
   Link = defineAsyncComponent({
@@ -43,9 +42,16 @@ if (props.router) {
   })
 
   // 导入路由钩子
-  import('vue-router').then(modal => modal.useRoute).then(useRoute => route = useRoute()).catch(() => {
+  const useRoute = await import('vue-router').then(modal => modal.useRoute).catch(() => {
     throw new Error('😱oh, 要想使用路由模式, vue router必须安装！')
   })
+
+  // 获取路由对象
+  route = useRoute()
+
+  if (!route) {
+    throw new Error('😱oh, 要想使用路由模式, vue router必须安装！')
+  }
 }
 
 // 定义渲染组件
