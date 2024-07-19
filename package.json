@@ -13,7 +13,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.22.4",
+    "@config/eslint": "workspace:*",
     "eslint": "^9.7.0",
     "turbo": "^2.0.7"
   }

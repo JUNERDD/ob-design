@@ -1,6 +1,3 @@
-import antfu from '@antfu/eslint-config'
+import commonEslintConfig from './config/eslint/index.js'
 
-export default antfu({
-  unocss: true,
-  typescript: true,
-})
+export default commonEslintConfig

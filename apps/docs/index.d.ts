@@ -1,2 +1,3 @@
-// 声明splinecode文件
-declare module '*.splinecode'
+/// <reference types="../../index.d.ts" />
+
+export {}
