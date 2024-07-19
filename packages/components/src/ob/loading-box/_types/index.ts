@@ -1,6 +1,6 @@
 import type { ClassValue } from 'class-variance-authority/types'
-import type { ISpinProps } from '../../../index'
 import type { TransitionProps } from 'vue'
+import type { ISpinProps } from '../../../index'
 
 /**
  * ObLoadingBox - 参数类型

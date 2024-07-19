@@ -1,7 +1,7 @@
+import { computed } from 'vue'
 import type { IThemeProps } from '../../index'
 import type { DefaultProps, ICommonProps } from '../_types'
 import { mergeObjects } from '../_utils'
-import { computed } from 'vue'
 
 /**
  * 获取合并的样式钩子

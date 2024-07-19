@@ -1,19 +1,19 @@
 {
   "name": "ob-design",
-  "version": "0.0.1",
-  "description": "",
-  "private": true,
   "type": "module",
-  "main": "./src/index.ts",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "exports": {
     ".": "./src/index.ts",
     "./preset": "./src/preset.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "./src/index.ts",
   "dependencies": {
-    "@ob-design/preset": "workspace:*",
-    "@ob-design/components": "workspace:*"
+    "@ob-design/components": "workspace:*",
+    "@ob-design/preset": "workspace:*"
   }
 }

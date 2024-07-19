@@ -8,6 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@antfu/eslint-config':
+        specifier: ^2.22.4
+        version: 2.23.0(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.5.3))(@vue/compiler-sfc@3.4.32)(eslint@9.7.0)(typescript@5.5.3)
+      eslint:
+        specifier: ^9.7.0
+        version: 9.7.0
       turbo:
         specifier: ^2.0.7
         version: 2.0.7
@@ -48,9 +54,9 @@ importers:
         specifier: ^4.4.0
         version: 4.4.0(vue@3.4.32(typescript@5.5.3))
     devDependencies:
-      '@antfu/eslint-config':
-        specifier: ^2.22.4
-        version: 2.23.0(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.5.3))(@vue/compiler-sfc@3.4.32)(eslint@9.7.0)(typescript@5.5.3)
+      '@config/eslint':
+        specifier: workspace:*
+        version: link:../../config/eslint
       '@iconify-json/icon-park-solid':
         specifier: ^1.1.14
         version: 1.1.14
@@ -84,6 +90,12 @@ importers:
       vite-plugin-eslint2:
         specifier: ^4.4.0
         version: 4.4.0(@types/eslint@8.56.10)(eslint@9.7.0)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+
+  config/eslint:
+    devDependencies:
+      '@antfu/eslint-config':
+        specifier: ^2.22.4
+        version: 2.23.0(@unocss/eslint-plugin@0.61.5(eslint@9.7.0)(typescript@5.5.3))(@vue/compiler-sfc@3.4.32)(eslint@9.7.0)(typescript@5.5.3)
 
   packages/components:
     dependencies:
@@ -4906,7 +4918,7 @@ snapshots:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
       '@stylistic/eslint-plugin': 2.6.0-beta.0(eslint@9.7.0)(typescript@5.5.3)
-      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@7.16.1(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
+      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
       '@typescript-eslint/parser': 8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3)
       eslint: 9.7.0
       eslint-config-flat-gitignore: 0.1.8
@@ -4952,7 +4964,7 @@ snapshots:
       eslint: 9.7.0
       eslint-rule-composer: 0.3.0
     optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@7.16.1(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
+      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
 
   '@antfu/install-pkg@0.1.1':
     dependencies:
@@ -6276,10 +6288,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@7.16.1(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)':
+  '@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)':
     dependencies:
       '@eslint-community/regexpp': 4.11.0
-      '@typescript-eslint/parser': 7.16.1(eslint@9.7.0)(typescript@5.5.3)
+      '@typescript-eslint/parser': 8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3)
       '@typescript-eslint/scope-manager': 8.0.0-alpha.40
       '@typescript-eslint/type-utils': 8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3)
       '@typescript-eslint/utils': 8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3)
@@ -7856,7 +7868,7 @@ snapshots:
       '@typescript-eslint/utils': 7.16.1(eslint@9.7.0)(typescript@5.5.3)
       eslint: 9.7.0
     optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@7.16.1(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
+      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
     transitivePeerDependencies:
       - supports-color
       - typescript

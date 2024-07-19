@@ -1,16 +1,17 @@
 {
-  "name": "@ob-design/preset",
-  "version": "0.0.1",
+  "name": "@config/eslint",
+  "type": "module",
+  "version": "1.0.0",
   "private": true,
   "description": "",
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "src/index.ts",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "unocss": "^0.61.5"
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.22.4"
   }
 }
