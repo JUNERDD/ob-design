@@ -4,7 +4,11 @@
   "description": "",
   "private": true,
   "type": "module",
-  "main": "index.ts",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./preset": "./src/preset.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

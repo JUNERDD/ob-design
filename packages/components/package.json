@@ -16,11 +16,8 @@
     "class-variance-authority": "^0.7.0",
     "klona": "^2.0.6",
     "unocss": "^0.61.5",
+    "tailwind-merge": "^2.4.0",
     "vue": "^3.4.31",
     "vue-router": "^4.4.0"
-  },
-  "devDependencies": {
-    "@unocss/webpack": "^0.61.5",
-    "tailwind-merge": "^2.4.0"
   }
 }

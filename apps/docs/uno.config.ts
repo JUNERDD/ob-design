@@ -1,6 +1,6 @@
 // uno.config.ts
 import { defineConfig, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
-import obPreset from '@ob-design/preset'
+import obPreset from 'ob-design/preset'
 
 export default defineConfig({
   content: {
