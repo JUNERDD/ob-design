@@ -1,4 +1,4 @@
-import { ObLink } from '@ob-design/components'
+import { ObLink } from 'ob-design'
 import type { IRenderListItem, renderOriginArray } from './_types'
 
 /**

@@ -1,5 +1,5 @@
 <script setup>
-import { ObButton, ObLoadingBox } from '@ob-design/components'
+import { ObButton, ObLoadingBox } from 'ob-design'
 
 const isLoad = ref(true)
 </script>

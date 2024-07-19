@@ -1,4 +1,4 @@
-import type { ICardContent } from '@ob-design/components'
+import type { ICardContent } from 'ob-design'
 
 /**
  * 首页技术栈

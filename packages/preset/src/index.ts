@@ -4,9 +4,9 @@ import shortcuts from './shortcuts'
 import theme from './theme'
 import rules from './rules'
 
-export * from './_types'
+import * as type from './_types'
 
-export { shortcuts, theme, rules }
+export { shortcuts, theme, rules, type }
 
 export interface PresetObOptions extends PresetOptions {
   /**

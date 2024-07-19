@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ITabGroupLabelItem } from '@ob-design/components'
-import { ObTabGroup } from '@ob-design/components'
+import type { ITabGroupLabelItem } from 'ob-design'
+import { ObTabGroup } from 'ob-design'
 
 const activeValue = ref('docs')
 
