@@ -1,3 +1,12 @@
 {
-  "outputDirectory": "apps/docs/.output"
+  "builds": [
+    {
+      "src": "apps/docs/package.json",
+      "use": "@vercel/node",
+      "config": {
+        "outputDirectory": "apps/docs/.output"
+      }
+    }
+  ],
+  "output": "apps/docs/.output"
 }
