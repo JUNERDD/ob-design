@@ -4,7 +4,7 @@ import type { IButtonProps } from '../_types'
 /**
  * ObButton - 样式
  */
-export default obCva<IButtonProps>('p-(b-2 t-2.3 x-2.5) flex justify-center text-center items-center gap-2 rounded-normal font-bold hover:(opacity-80) active:(brightness-90)', {
+export default obCva<IButtonProps>('p-b-2 p-t-2.3 p-x-2.5 flex justify-center text-center items-center gap-2 rounded-normal font-bold hover:opacity-80 active:brightness-90', {
   variants: {
     size: {
       small: 'text-xs',
@@ -17,7 +17,7 @@ export default obCva<IButtonProps>('p-(b-2 t-2.3 x-2.5) flex justify-center text
       info: 'bg-mediumGray c-black',
       warning: 'bg-warning c-white',
       danger: 'bg-danger c-white',
-      ghost: ' bg-transparent hover:(bg-mediumGray opacity-100) c-black',
+      ghost: ' bg-transparent hover:bg-mediumGray hover:opacity-100 c-black',
     },
     icon: {
       true: 'aspect-square',

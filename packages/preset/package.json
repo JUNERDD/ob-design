@@ -1,0 +1,16 @@
+{
+  "name": "@ob-design/preset",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "unocss": "^0.61.5"
+  }
+}

@@ -1,12 +1,16 @@
 {
   "name": "root",
   "type": "module",
+  "private": true,
   "version": "0.0.1",
   "scripts": {
-    "dev": "pnpm -C ./docs run dev",
-    "build": "pnpm -C ./docs run build"
+    "dev": "turbo dev",
+    "build": "turbo build"
   },
-  "private": true,
   "author": "JUNER",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.0.7"
+  },
+  "packageManager": "pnpm@9.5.0"
 }
