@@ -1,5 +1,5 @@
-import { PROVIDER_KEY } from '../../index'
 import { inject } from 'vue'
+import { PROVIDER_KEY } from '../../index'
 
 /**
  * 使用主题钩子

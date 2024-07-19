@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineAsyncComponent, computed, ref, watch, reactive, onMounted, onUnmounted } from 'vue'
 import { cn, useMergeStyleProps, useTheme, useThrottle } from '../../index'
-import type { RouteLocationNormalizedLoaded, _RouterLinkI } from '../../index'
+import type { _RouterLinkI, RouteLocationNormalizedLoaded } from '../../index'
 import _style, { labelStyle } from './_style'
 import _default from './_default'
 import type { ITabGroupLabelDataset, ITabGroupProps, ITabGroupSlot } from './_types'
@@ -48,6 +48,10 @@ if (props.router) {
 
   // 获取路由对象
   route = useRoute()
+
+  if (!route) {
+    throw new Error('😱oh, 要想使用路由模式, vue router必须安装！')
+  }
 }
 
 // 定义渲染组件

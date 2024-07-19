@@ -10,8 +10,7 @@ import ObSection from './section/index.vue'
 import ObSectionBlock from './section/block.vue'
 import ObSpline3d from './spline-3d/index.vue'
 
-export { ObButton, ObCard, ObLink, ObLoadingBox, ObSpin, ObTabGroup, ObTheme, ObModal,
-  ObSection, ObSectionBlock, ObSpline3d }
+export { ObButton, ObCard, ObLink, ObLoadingBox, ObSpin, ObTabGroup, ObTheme, ObModal, ObSection, ObSectionBlock, ObSpline3d }
 
 export * from './button/_default'
 export * from './button/_style'

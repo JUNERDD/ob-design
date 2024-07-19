@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'vue'
-import type { ICommonProps } from '../../../index'
 import type { ClassValue } from 'class-variance-authority/types'
+import type { ICommonProps } from '../../../index'
 
 /**
  * ObCard - 内容参数

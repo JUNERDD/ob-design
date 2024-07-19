@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive, onMounted, onUnmounted, onActivated, onDeactivated } from 'vue'
+import { onActivated, onDeactivated, onMounted, onUnmounted, reactive, ref } from 'vue'
 import { Application } from '@splinetool/runtime'
 import type { IObSpline3dEmits, IObSpline3dProps } from './_types'
 

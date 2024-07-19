@@ -1,0 +1,21 @@
+{
+  "name": "vite-test",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.61.5",
+    "ob-design": "workspace:*",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "unocss": "^0.61.5",
+    "vite": "^5.3.4"
+  }
+}
