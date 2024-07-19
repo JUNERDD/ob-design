@@ -1,9 +1,9 @@
 <script setup>
-import { ObButton, ObTabGroup, ObLoadingBox } from 'ob-design'
-import { ref } from 'vue';
+import { ObButton, ObLoadingBox, ObTabGroup } from 'ob-design'
+import { ref } from 'vue'
 
 // 初始化tab值
-const tabValue = defineModel({default: '/docs'})
+const tabValue = defineModel({ default: '/docs' })
 
 // tab组件
 const items = [
@@ -17,7 +17,7 @@ const isLoad = ref(true)
 </script>
 
 <template>
-  <div class="h-screen gap-2xl flex flex-col items-center justify-center">
+  <div class="h-screen flex flex-col items-center justify-center gap-2xl">
     <ObButton class="mx-auto" variant="danger">
       按钮
     </ObButton>
@@ -25,17 +25,17 @@ const isLoad = ref(true)
     <ObTabGroup v-model="tabValue" class="lt-sm:hidden" :items />
 
     <div class="flex flex-col items-center justify-center gap-3">
-    <div class="relative h-40 w-120 overflow-hidden border rounded-2xl">
-      <ObLoadingBox v-model="isLoad" mask-mode>
-        <div class="h-10 w-full flex-center gap-3 bg-red">
-          docs
-        </div>
-      </ObLoadingBox>
+      <div class="relative h-40 w-120 overflow-hidden border rounded-2xl">
+        <ObLoadingBox v-model="isLoad" mask-mode>
+          <div class="h-10 w-full flex-center gap-3 bg-red">
+            docs
+          </div>
+        </ObLoadingBox>
+      </div>
+      <ObButton @click="isLoad = !isLoad">
+        更改加载状态
+      </ObButton>
     </div>
-    <ObButton @click="isLoad = !isLoad">
-      更改加载状态
-    </ObButton>
-  </div>
   </div>
 </template>
 
