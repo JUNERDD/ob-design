@@ -1,6 +1,5 @@
 export type * from './cva'
 export type * from './props'
-export type * from './uno'
 export type * from './router'
 
 export type Booleanish = boolean | 'true' | 'false'

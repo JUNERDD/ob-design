@@ -1,0 +1,14 @@
+{
+  "name": "ob-design",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ob-design/preset": "workspace:*",
+    "@ob-design/components": "workspace:*"
+  }
+}
