@@ -8,9 +8,9 @@ export default defineConfig({
       include: [
         // the default
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
+        /.*\/ob\/.*\.ts$/,
         // include js/ts files
         'composables/**/*.{js,ts}',
-        '../../packages/components/**/*.{js,ts}',
       ],
     },
   },

@@ -43,7 +43,7 @@ importers:
         version: 3.12.3(@parcel/watcher@2.4.1)(@types/node@20.14.11)(eslint@9.7.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(terser@5.31.3)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(vue-tsc@2.0.19(typescript@5.5.3))
       obdesign:
         specifier: workspace:*
-        version: link:../../packages/ob-design
+        version: link:../../packages/obdesign
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -98,7 +98,7 @@ importers:
         version: 0.61.5
       obdesign:
         specifier: workspace:*
-        version: link:../../packages/ob-design
+        version: link:../../packages/obdesign
       vue:
         specifier: ^3.4.31
         version: 3.4.32(typescript@5.5.3)
@@ -146,14 +146,14 @@ importers:
         specifier: ^4.4.0
         version: 4.4.0(vue@3.4.32(typescript@5.5.3))
 
-  packages/ob-design:
+  packages/obdesign:
     dependencies:
       '@obdesign/components':
         specifier: latest
-        version: 0.0.1(@unocss/webpack@0.61.5)(typescript@5.5.3)(vite@5.3.4)
+        version: 0.0.2(@unocss/webpack@0.61.5)(typescript@5.5.3)(vite@5.3.4)
       '@obdesign/preset':
         specifier: latest
-        version: 0.0.1(@unocss/webpack@0.61.5)(vite@5.3.4)
+        version: 0.0.2(@unocss/webpack@0.61.5)(vite@5.3.4)
 
   packages/preset:
     dependencies:
@@ -1047,11 +1047,11 @@ packages:
     peerDependencies:
       vue: ^3.3.4
 
-  '@obdesign/components@0.0.1':
-    resolution: {integrity: sha512-0rffxnalaXvVlujM4u9HcigOxTZF1Oe3EDo9GlneO3zRj8Z1lGhwXC3+d+pEjubNivqaaSSZjN/uc7WAUNxwpQ==}
+  '@obdesign/components@0.0.2':
+    resolution: {integrity: sha512-FaR1nyl/ElbXjc165jjyIQiicE1k52UEGLDuYD04kDV5/drs8qWozJaZymZn+R5SjQZQPW7JorX7xfSex4KpIQ==}
 
-  '@obdesign/preset@0.0.1':
-    resolution: {integrity: sha512-c7feu+OgWv9ZSRVmHrAgBCw+eU1RHh8bpI6N16ZgesLuCVzx0TELuBo2yJdbdQ4l+RP+7IIvm00zNQTOh1VJKA==}
+  '@obdesign/preset@0.0.2':
+    resolution: {integrity: sha512-fifipf7KvI/jS+BWgAWIlwgJheDP1+nQ+5BQFXAVnwDRJ3nIQihjyXthJqcRUzKflVbjUKtnENG3aYUzqKWbUQ==}
 
   '@parcel/watcher-android-arm64@2.4.1':
     resolution: {integrity: sha512-LOi/WTbbh3aTn2RYddrO8pnapixAziFl6SMxHM69r3tvdSm94JtCenaKgk1GRg5FJ5wpMCpHeW+7yqPlvZv7kg==}
@@ -6011,7 +6011,7 @@ snapshots:
       - vti
       - vue-tsc
 
-  '@obdesign/components@0.0.1(@unocss/webpack@0.61.5)(typescript@5.5.3)(vite@5.3.4)':
+  '@obdesign/components@0.0.2(@unocss/webpack@0.61.5)(typescript@5.5.3)(vite@5.3.4)':
     dependencies:
       '@splinetool/runtime': 1.9.0
       '@vueuse/core': 10.11.0(vue@3.4.32(typescript@5.5.3))
@@ -6030,7 +6030,7 @@ snapshots:
       - typescript
       - vite
 
-  '@obdesign/preset@0.0.1(@unocss/webpack@0.61.5)(vite@5.3.4)':
+  '@obdesign/preset@0.0.2(@unocss/webpack@0.61.5)(vite@5.3.4)':
     dependencies:
       unocss: 0.61.5(@unocss/webpack@0.61.5)(vite@5.3.4)
     transitivePeerDependencies:
