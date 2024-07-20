@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ObSpline3d } from 'obdesign'
+import { ObSpline3d } from '@obdesign/components'
 import splineWelcome from '@/assets/spline/welcome.splinecode'
 
 defineOptions({ name: 'HomeWelcome' })

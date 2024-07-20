@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ObSpin, ObSpline3d } from 'obdesign'
+import { ObSpin, ObSpline3d } from '@obdesign/components'
 
 import splineUnderDevelopment from '@/assets/spline/under_development.splinecode'
 

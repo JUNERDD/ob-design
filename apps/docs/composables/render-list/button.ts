@@ -1,4 +1,4 @@
-import { ObButton } from 'obdesign'
+import { ObButton } from '@obdesign/components'
 import type { IRenderListItem, renderOriginArray } from './_types'
 
 /**

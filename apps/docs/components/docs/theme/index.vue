@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { VariantPropsType } from 'obdesign'
-import { ObButton } from 'obdesign'
+import type { VariantPropsType } from '@obdesign/components'
+import { ObButton } from '@obdesign/components'
 // import { uuid } from 'ob-lib'
 
 // 主题类型
