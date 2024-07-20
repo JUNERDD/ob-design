@@ -10,11 +10,13 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "patch": "turbo patch"
   },
   "devDependencies": {
     "@config/eslint": "workspace:*",
     "eslint": "^9.7.0",
-    "turbo": "^2.0.7"
+    "turbo": "^2.0.7",
+    "unocss": "^0.61.5"
   }
 }

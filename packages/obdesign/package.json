@@ -1,22 +1,28 @@
 {
-  "name": "@obdesign/preset",
+  "name": "obdesign",
   "type": "module",
   "version": "0.0.4",
-  "description": "一个 Unocss 预设",
+  "description": "一个基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设",
   "author": "JUNER",
   "license": "MIT",
   "homepage": "https://github.com/JUNERDD/obdesign",
   "keywords": [
+    "vue",
+    "components",
     "unocss",
     "preset",
     "typescript"
   ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./preset": "./src/preset.ts"
+  },
   "main": "./src/index.ts",
-  "types": "./types.d.ts",
   "scripts": {
     "patch": "pnpm version patch"
   },
   "dependencies": {
-    "unocss": "^0.61.5"
+    "@obdesign/components": "latest",
+    "@obdesign/preset": "latest"
   }
 }

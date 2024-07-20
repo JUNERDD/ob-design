@@ -13,7 +13,7 @@ defineProps<ISectionProps>()
       {{ title }}
     </NuxtLink>
 
-    <div class="flex flex-col gap-4 rounded-lg bg-white p-2">
+    <div class="flex flex-col bg-white gap-4 rounded-lg p-2">
       <slot />
     </div>
   </div>

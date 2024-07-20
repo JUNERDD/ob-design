@@ -30,3 +30,6 @@ logs
 
 # vercel
 .vercel
+
+# npm
+.npmignore

@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-// import Spin from 'ob-design'
+// import Spin from 'obdesign'
 
 /**
  * Ob-Design vue 插件

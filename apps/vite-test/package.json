@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@obdesign/components": "workspace:*",
+    "@obdesign/preset": "workspace:*",
     "@unocss/reset": "^0.61.5",
-    "ob-design": "workspace:*",
     "vue": "^3.4.31"
   },
   "devDependencies": {
