@@ -20,7 +20,7 @@ export interface PresetObOptions extends PresetOptions {
  */
 const obPreset = definePreset((options?: PresetObOptions) => {
   return {
-    name: '@ob-design/preset',
+    name: '@obdesign/preset',
     theme,
     shortcuts,
     rules,

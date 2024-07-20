@@ -19,7 +19,7 @@
     "class-variance-authority": "^0.7.0",
     "klona": "^2.0.6",
     "nuxt": "^3.12.3",
-    "ob-design": "workspace:*",
+    "obdesign": "workspace:*",
     "uuid": "^10.0.0",
     "vue": "^3.4.31",
     "vue-router": "^4.4.0"

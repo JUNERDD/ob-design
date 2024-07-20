@@ -1,19 +1,25 @@
 {
-  "name": "ob-design",
+  "name": "obdesign",
   "type": "module",
-  "version": "0.0.1",
-  "private": true,
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
+  "version": "0.0.2",
+  "description": "一个基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设",
+  "author": "JUNER",
+  "license": "MIT",
+  "homepage": "https://github.com/JUNERDD/obdesign",
+  "keywords": [
+    "vue",
+    "components",
+    "unocss",
+    "preset",
+    "typescript"
+  ],
   "exports": {
     ".": "./src/index.ts",
     "./preset": "./src/preset.ts"
   },
   "main": "./src/index.ts",
   "dependencies": {
-    "@ob-design/components": "workspace:*",
-    "@ob-design/preset": "workspace:*"
+    "@obdesign/components": "latest",
+    "@obdesign/preset": "latest"
   }
 }

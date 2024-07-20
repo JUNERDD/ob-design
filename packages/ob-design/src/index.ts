@@ -1,1 +1,1 @@
-export * from '@ob-design/components'
+export * from '@obdesign/components'

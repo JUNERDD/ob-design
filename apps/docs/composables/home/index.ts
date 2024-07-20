@@ -1,4 +1,4 @@
-import type { ICardContent } from 'ob-design'
+import type { ICardContent } from 'obdesign'
 
 /**
  * 首页技术栈

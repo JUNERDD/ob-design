@@ -1,21 +1,18 @@
 {
-  "name": "@ob-design/preset",
+  "name": "@obdesign/preset",
   "type": "module",
-  "version": "0.0.1",
-  "private": true,
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "main": "src/index.ts",
+  "version": "0.0.2",
+  "description": "一个 Unocss 预设",
+  "author": "JUNER",
+  "license": "MIT",
+  "homepage": "https://github.com/JUNERDD/obdesign",
+  "keywords": ["unocss", "preset", "typescript"],
+  "main": "./src/index.ts",
+  "types": "./types.d.ts",
   "scripts": {
     "build": "vite build"
   },
   "dependencies": {
     "unocss": "^0.61.5"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "vite": "^5.3.4"
   }
 }

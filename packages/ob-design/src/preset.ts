@@ -1,5 +1,5 @@
-import obPreset from '@ob-design/preset'
+import obPreset from '@obdesign/preset'
 
-export * from '@ob-design/preset'
+export * from '@obdesign/preset'
 
 export default obPreset

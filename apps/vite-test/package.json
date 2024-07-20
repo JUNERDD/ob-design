@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.61.5",
-    "ob-design": "workspace:*",
+    "obdesign": "workspace:*",
     "vue": "^3.4.31"
   },
   "devDependencies": {
