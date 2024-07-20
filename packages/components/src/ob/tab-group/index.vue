@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { defineAsyncComponent, computed, ref, watch, reactive, onMounted, onUnmounted } from 'vue'
+import { computed, defineAsyncComponent, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
 import { cn, useMergeStyleProps, useTheme, useThrottle } from '../../index'
-import type { _RouterLinkI, RouteLocationNormalizedLoaded } from '../../index'
+import type { RouteLocationNormalizedLoaded, _RouterLinkI } from '../../index'
 import _style, { labelStyle } from './_style'
 import _default from './_default'
 import type { ITabGroupLabelDataset, ITabGroupProps, ITabGroupSlot } from './_types'

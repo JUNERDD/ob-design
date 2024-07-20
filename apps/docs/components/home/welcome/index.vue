@@ -6,7 +6,7 @@ defineOptions({ name: 'HomeWelcome' })
 </script>
 
 <template>
-  <div class="h-4xl w-full flex-center lt-lg:h-2xl lt-md:h-md">
+  <div class="h-4xl w-full flex-center lt-md:h-md lt-lg:h-2xl">
     <ObSpline3d :scene-url="splineWelcome" class="animate-zoom-in-down" />
   </div>
 </template>

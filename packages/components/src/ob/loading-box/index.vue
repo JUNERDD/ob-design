@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cn, ObSpin } from '../../index'
+import { ObSpin, cn } from '../../index'
 import type { ILoadingBoxProps } from './_types'
 import _default from './_default'
 import { maskBoxStyle, maskStyle, spinStyle } from './_style'

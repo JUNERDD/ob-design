@@ -17,7 +17,7 @@ const items: ITabGroupLabelItem [] = [
   <div class="w-full max-w-screen-2xl flex-center-i p-8">
     <!-- logo -->
     <NuxtLink to="/" class="flex flex-1 justify-start">
-      <NuxtImg title="logo" src="/svg/logo.svg" class="h-5 w-5 md:(h-8 w-8)" />
+      <NuxtImg title="logo" src="/svg/logo.svg" class="h-5 w-5 md:h-8 md:w-8" />
     </NuxtLink>
 
     <!-- tab -->
