@@ -1,5 +1,5 @@
 <script setup>
-import { ObButton, ObLoadingBox, ObTabGroup } from 'obdesign'
+import { ObButton, ObLoadingBox, ObTabGroup } from '@obdesign/components'
 import { ref } from 'vue'
 
 // 初始化tab值

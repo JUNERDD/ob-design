@@ -12,7 +12,7 @@ const items = ref<ITabGroupLabelItem[]>([
 </script>
 
 <template>
-  <div class="w-full flex flex-col gap-3 bg-white items-start">
+  <div class="w-full flex flex-col items-start gap-3 bg-white">
     <ObTabGroup v-model="activeValue" default-value="1" :items>
       <template #label="{ item }">
         <span>{{ item.value }}</span>
