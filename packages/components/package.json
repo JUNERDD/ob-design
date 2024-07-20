@@ -1,16 +1,21 @@
 {
   "name": "@obdesign/components",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "一个基于 Vue 3 和 Unocss 的组件库",
   "author": "JUNER",
   "license": "MIT",
   "homepage": "https://github.com/JUNERDD/obdesign",
-  "keywords": ["vue", "components", "unocss", "typescript"],
+  "keywords": [
+    "vue",
+    "components",
+    "unocss",
+    "typescript"
+  ],
   "main": "./src/index.ts",
   "types": "./types.d.ts",
   "scripts": {
-    "build": ""
+    "patch": "pnpm version patch"
   },
   "dependencies": {
     "@splinetool/runtime": "^1.9.0",

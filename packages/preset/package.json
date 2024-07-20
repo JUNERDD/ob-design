@@ -1,16 +1,20 @@
 {
   "name": "@obdesign/preset",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "一个 Unocss 预设",
   "author": "JUNER",
   "license": "MIT",
   "homepage": "https://github.com/JUNERDD/obdesign",
-  "keywords": ["unocss", "preset", "typescript"],
+  "keywords": [
+    "unocss",
+    "preset",
+    "typescript"
+  ],
   "main": "./src/index.ts",
   "types": "./types.d.ts",
   "scripts": {
-    "build": ""
+    "patch": "pnpm version patch"
   },
   "dependencies": {
     "unocss": "^0.61.5"

@@ -24,7 +24,7 @@ export default obCva<ITabGroupProps>('relative flex gap-2 rounded-large bg-light
 /**
  * ObTabGroup - Label 样式
  */
-export const labelStyle = obCva<ITabGroupProps>('z-1 min-w-15 text-center rounded-normal bg-transparent p-x-5 p-b-2 p-t-2.3 c-black transition-all', {
+export const labelStyle = obCva<ITabGroupProps>('z-1 min-w-15 text-center rounded-normal bg-transparent p-x-5 py-2 c-black transition-all', {
   variants: {
     variant: {
       primary: 'data-[active=true]:bg-primary data-[active=true]:c-white',

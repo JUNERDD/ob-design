@@ -10,7 +10,8 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "patch": "turbo patch"
   },
   "devDependencies": {
     "@config/eslint": "workspace:*",
