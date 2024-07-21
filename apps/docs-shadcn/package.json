@@ -12,9 +12,10 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@obdesign/components": "workspace:*",
+    "@obdesign/preset": "workspace:*",
     "nuxt": "^3.12.3",
     "shadcn-docs-nuxt": "latest",
-    "shadcn-nuxt": "^0.10.4",
     "vue": "^3.4.31",
     "vue-router": "^4.4.0"
   },
@@ -25,7 +26,7 @@
     "@iconify-json/noto": "^1.1.18",
     "@iconify-json/vscode-icons": "^1.1.36",
     "@nuxt/eslint": "^0.3.13",
-    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@unocss/nuxt": "^0.61.5",
     "eslint": "^9.7.0",
     "vite-plugin-eslint2": "^4.4.0"
   }

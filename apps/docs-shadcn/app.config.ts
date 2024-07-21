@@ -5,22 +5,21 @@ export default defineAppConfig({
       description: 'Beautifully designed Nuxt Content template built with shadcn-vue. Customizable. Compatible. Open Source.',
     },
     theme: {
-      customizable: true,
+      customizable: false,
       color: 'zinc',
       radius: 1,
     },
     header: {
-      title: 'shadcn-docs-starter',
-      showTitle: true,
-      darkModeToggle: true,
+      showTitle: false,
+      darkModeToggle: false,
       logo: {
-        light: '/logo.svg',
-        dark: '/logo-dark.svg',
+        light: '/svg/logo.svg',
+        dark: '/svg/logo.svg',
       },
       nav: [],
       links: [{
         icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
+        to: 'https://github.com/JUNERDD/ob-design',
         target: '_blank',
       }],
     },
@@ -33,10 +32,10 @@ export default defineAppConfig({
       showTitle: true,
     },
     footer: {
-      credits: 'Copyright © 2024',
+      credits: '© Ob Design 2024',
       links: [{
         icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
+        to: 'https://github.com/JUNERDD/ob-design',
         target: '_blank',
       }],
     },
@@ -46,12 +45,12 @@ export default defineAppConfig({
       links: [{
         title: 'Star on GitHub',
         icon: 'lucide:star',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
+        to: 'https://github.com/JUNERDD/ob-design',
         target: '_blank',
       }, {
         title: 'Create Issues',
         icon: 'lucide:circle-dot',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/issues',
+        to: 'https://github.com/JUNERDD/ob-design/issues',
         target: '_blank',
       }],
     },

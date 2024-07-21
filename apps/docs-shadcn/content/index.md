@@ -3,7 +3,7 @@ title: Home
 navigation: false
 ---
 
-::hero
+::hero{class="home-hero"}
 ---
 announcement:
   title: '正在积极开发中'
@@ -14,7 +14,7 @@ actions:
     to: /getting-started
   - name: GitHub
     variant: outline
-    to: https://github.com/JUNERDD/ob-design.git
+    to: https://github.com/JUNERDD/ob-design
     leftIcon: 'lucide:github'
 ---
 
@@ -25,44 +25,14 @@ actions:
 Beautifully designed Vue Components built with Ob Design. :br click the button below to quickly experience.
 ::
 
-::card-group{class="md:grid-cols-3"}
-  :::card
-  ---
-  icon: simple-icons:vuedotjs
-  target: _blank
-  title: Vue Components
-  to: https://cn.vuejs.org/
-  ---
-  快速构建原生 Vue3 应用
-  :::
+::stack
+::
 
-  :::card
-  ---
-  icon: mdi:language-typescript
-  target: _blank
-  title: Typescript
-  to: https://nuxt.com/docs/api/composables/use-app-config
-  ---
-  获得良好的TS类型提示
-  :::
-
-  :::card
-  ---
-  icon: i-heroicons-scissors
-  target: _blank
-  title: Utils
-  to: https://nuxt.com/docs/api/utils/dollarfetch
-  ---
-  Learn about Nuxt utility functions for navigation, error handling and more.
-  :::
-
-  :::card
-  ---
-  icon: i-heroicons-command-line
-  target: _blank
-  title: Commands
-  to: https://nuxt.com/docs/api/commands/add
-  ---
-  List of Nuxt CLI commands to init, analyze, build, and preview your application.
-  :::
+::field-group{class="home-field-group"}
+  ::field{name="项目是开源的吗？" type="2024-7-18"}
+  是的！项目是 100% 开源，您可以用于任何商业和个人项目中。
+  ::
+  ::field{name="未来计划如何？" type="2024-7-21"}
+  完善文档、继续完善更多组件、推出完整的设计系统。
+  ::
 ::

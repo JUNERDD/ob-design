@@ -2,8 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ['shadcn-docs-nuxt'],
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  modules: ['@nuxt/eslint', '@unocss/nuxt'],
   compatibilityDate: '2024-07-06',
+  css: ['@/assets/css/main.css'],
   eslint: {
     checker: true,
     config: {
@@ -13,6 +14,5 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     viewer: false,
-    exposeConfig: true,
   },
 })

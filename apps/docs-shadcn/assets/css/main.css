@@ -1,0 +1,40 @@
+header, footer {
+  button{
+    @apply rounded-sm !important;
+  }
+
+  kbd {
+    @apply rounded-[0.45rem] !important;
+  }
+}
+
+footer {
+  .container {
+    @apply justify-center !important;
+
+    .flex-1 {
+      display: none;
+    }
+  }
+
+  a {
+    display: none;
+  }
+}
+
+/* 首页 */
+.home-hero {
+  button {
+    @apply rounded-2xl;
+  }
+}
+
+/* 首页卡片组 */
+.home-card-group {
+  @apply md:grid-cols-3;
+}
+
+/* 首页问题 */
+.home-field-group {
+  @apply mt-32 !important;
+}
