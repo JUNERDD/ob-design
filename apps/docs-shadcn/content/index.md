@@ -6,25 +6,63 @@ navigation: false
 ::hero
 ---
 announcement:
-  title: 'Release v0.4.1'
-  icon: 'noto:party-popper'
+  title: '正在积极开发中'
+  icon: 'noto:hammer-and-pick'
   to: /getting-started/changelog
 actions:
-  - name: Get Started
+  - name: 快速开始
     to: /getting-started
   - name: GitHub
     variant: outline
-    to: https://github.com/ZTL-UwU/shadcn-docs-nuxt
+    to: https://github.com/JUNERDD/ob-design.git
     leftIcon: 'lucide:github'
 ---
 
 #title
-Effortless and Beautiful<br>Docs Template.
+[对 SSR 友好 / 完全 TypeScrip :br UNOCSS 组件库]{style="line-height: 1.3;"}
 
 #description
-Beautifully designed Nuxt Content template built with shadcn-vue.<br>Customizable. Compatible. Open Source.
+Beautifully designed Vue Components built with Ob Design. :br click the button below to quickly experience.
 ::
 
-<div class="border rounded-lg shadow-md">
-  <iframe src="/getting-started/introduction" height="700" width="100%" class="rounded-lg" scrolling="no" frameborder="0">
-</div>
+::card-group{class="md:grid-cols-3"}
+  :::card
+  ---
+  icon: simple-icons:vuedotjs
+  target: _blank
+  title: Vue Components
+  to: https://cn.vuejs.org/
+  ---
+  快速构建原生 Vue3 应用
+  :::
+
+  :::card
+  ---
+  icon: mdi:language-typescript
+  target: _blank
+  title: Typescript
+  to: https://nuxt.com/docs/api/composables/use-app-config
+  ---
+  获得良好的TS类型提示
+  :::
+
+  :::card
+  ---
+  icon: i-heroicons-scissors
+  target: _blank
+  title: Utils
+  to: https://nuxt.com/docs/api/utils/dollarfetch
+  ---
+  Learn about Nuxt utility functions for navigation, error handling and more.
+  :::
+
+  :::card
+  ---
+  icon: i-heroicons-command-line
+  target: _blank
+  title: Commands
+  to: https://nuxt.com/docs/api/commands/add
+  ---
+  List of Nuxt CLI commands to init, analyze, build, and preview your application.
+  :::
+::

@@ -108,6 +108,9 @@ importers:
       shadcn-docs-nuxt:
         specifier: latest
         version: 0.4.1(@parcel/watcher@2.4.1)(@types/node@20.14.11)(eslint@9.7.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(tailwindcss@3.4.6)(terser@5.31.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(vue-tsc@2.0.19(typescript@5.5.3))
+      shadcn-nuxt:
+        specifier: ^0.10.4
+        version: 0.10.4(magicast@0.3.4)(rollup@4.18.1)
       vue:
         specifier: ^3.4.31
         version: 3.4.32(typescript@5.5.3)
@@ -118,6 +121,12 @@ importers:
       '@config/eslint':
         specifier: workspace:*
         version: link:../../config/eslint
+      '@iconify-json/heroicons':
+        specifier: ^1.1.22
+        version: 1.1.22
+      '@iconify-json/mdi':
+        specifier: ^1.1.67
+        version: 1.1.67
       '@iconify-json/noto':
         specifier: ^1.1.18
         version: 1.1.18
@@ -127,6 +136,9 @@ importers:
       '@nuxt/eslint':
         specifier: ^0.3.13
         version: 0.3.13(eslint@9.7.0)(magicast@0.3.4)(rollup@4.18.1)(typescript@5.5.3)(vite-plugin-eslint2@4.4.0(@types/eslint@8.56.10)(eslint@9.7.0)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3)))(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+      '@nuxtjs/tailwindcss':
+        specifier: ^6.12.1
+        version: 6.12.1(magicast@0.3.4)(rollup@4.18.1)
       eslint:
         specifier: ^9.7.0
         version: 9.7.0
@@ -978,11 +990,17 @@ packages:
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
 
+  '@iconify-json/heroicons@1.1.22':
+    resolution: {integrity: sha512-UNfSBdD/JBYBvFFhce6e3FsmeqshGz8u964R36npJvIzuORhIHUXrFerulBWFmbG0V1xvMqLZVZc4bPyjP5p7A==}
+
   '@iconify-json/icon-park-solid@1.1.14':
     resolution: {integrity: sha512-oXV3KoGjd6vyOArhhumrCAuvG9+1G4+FHQEy76WbnU6lDoir8jnkGyDxmMTfmz831eHCUXC/pqnS1Gr0TfEPUg==}
 
   '@iconify-json/lucide@1.1.200':
     resolution: {integrity: sha512-imZeWdgMcJ6xZ15U0h35kehDcrVShvrTui3RvuY/ZUxFGC23wxPt1OQXiu+KQ/GEiujGEeOtQ1BL3Jf+7dQiqw==}
+
+  '@iconify-json/mdi@1.1.67':
+    resolution: {integrity: sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==}
 
   '@iconify-json/noto@1.1.18':
     resolution: {integrity: sha512-1yA0n/oAbzZ8KWAu71Qzz1mSylfZ5j9lXgAR5iRwrpSo2SxB3NtHPAfYTbW4l6JsjkNXbpfYE/s9uUTWmfF9xQ==}
@@ -6484,11 +6502,19 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
+  '@iconify-json/heroicons@1.1.22':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/icon-park-solid@1.1.14':
     dependencies:
       '@iconify/types': 2.0.0
 
   '@iconify-json/lucide@1.1.200':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/mdi@1.1.67':
     dependencies:
       '@iconify/types': 2.0.0
 

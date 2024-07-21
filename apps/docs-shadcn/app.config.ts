@@ -6,8 +6,8 @@ export default defineAppConfig({
     },
     theme: {
       customizable: true,
-      color: 'blue',
-      radius: 0.5,
+      color: 'zinc',
+      radius: 1,
     },
     header: {
       title: 'shadcn-docs-starter',
