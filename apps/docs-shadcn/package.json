@@ -1,0 +1,28 @@
+{
+  "name": "shadcn-docs-nuxt-starter",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "nuxt": "^3.12.3",
+    "shadcn-docs-nuxt": "latest",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@config/eslint": "workspace:*",
+    "@iconify-json/noto": "^1.1.18",
+    "@iconify-json/vscode-icons": "^1.1.36",
+    "@nuxt/eslint": "^0.3.13",
+    "eslint": "^9.7.0",
+    "vite-plugin-eslint2": "^4.4.0"
+  }
+}

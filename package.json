@@ -11,6 +11,8 @@
     "build": "turbo build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "lint-app": "turbo lint",
+    "lint-app:fix": "turbo lint:fix",
     "patch": "turbo patch"
   },
   "devDependencies": {
