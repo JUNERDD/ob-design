@@ -67,4 +67,36 @@ main {
       cursor: default;
     }
   }
+
+  code {
+    span[style="--shiki-default:#24292E;--shiki-dark:#E1E4E8"],
+    span[style="--shiki-default: #24292E; --shiki-dark: #E1E4E8;"]
+    {
+      @apply text-[#394148] !important;
+    }
+
+    span[style="--shiki-default:#032F62;--shiki-dark:#DBEDFF"],
+    span[style="--shiki-default: #032F62; --shiki-dark: #DBEDFF;"]
+    {
+      @apply text-[#032F62] !important;
+    }
+
+    span[style="--shiki-default:#005CC5;--shiki-dark:#79B8FF"],
+    span[style="--shiki-default: #005CC5; --shiki-dark: #79B8FF;"]
+    {
+      @apply text-[#005CC5] !important;
+    }
+
+    span[style="--shiki-default:#032F62;--shiki-dark:#9ECBFF"],
+    span[style="--shiki-default: #032F62; --shiki-dark: #9ECBFF;"]
+    {
+      @apply text-[#032F62] !important;
+    }
+
+    span[style="--shiki-default:#22863A;--shiki-dark:#85E89D"],
+    span[style="--shiki-default: #22863A; --shiki-dark: #85E89D;"]
+    {
+      @apply text-[#032F62] !important;
+    }
+  }
 }
