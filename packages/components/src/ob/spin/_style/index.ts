@@ -18,4 +18,14 @@ export default obCva<ISpinProps>('relative h-12 w-12 flex items-center justify-c
 /**
  * ObSpin - Line 样式
  */
-export const lineStyle = 'absolute left-0 top-1/2 h-1 w-full animate-spin rounded-full bg-primary'
+export const lineStyle = obCva<ISpinProps>('absolute left-0 top-1/2 h-1 w-full animate-spin rounded-full', {
+  variants: {
+    variant: {
+      primary: 'bg-primary',
+      success: 'bg-success',
+      info: 'bg-mediumGray',
+      warning: 'bg-warning',
+      danger: 'bg-danger',
+    },
+  },
+})

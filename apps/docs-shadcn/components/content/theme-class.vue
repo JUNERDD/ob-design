@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ObButton, ObLink, ObSpin, ObTabGroup, ObTheme } from '@obdesign/components'
+import { ObButton, ObLink, ObTabGroup, ObTheme } from '@obdesign/components'
 </script>
 
 <template>
@@ -8,7 +8,6 @@ import { ObButton, ObLink, ObSpin, ObTabGroup, ObTheme } from '@obdesign/compone
     <ObTheme class="max-w-120 bg-red p-5 c-white">
       <ObButton>Hello World</ObButton>
       <ObLink>Hello World</ObLink>
-      <ObSpin />
     </ObTheme>
   </div>
 </template>
