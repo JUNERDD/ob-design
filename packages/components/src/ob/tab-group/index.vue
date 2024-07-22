@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, defineAsyncComponent, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, nextTick, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
 import { cn, useMergeStyleProps, useTheme, useThrottle } from '../../index'
 import type { RouteLocationNormalizedLoaded, _RouterLinkI } from '../../index'
 import _style, { labelStyle } from './_style'
@@ -52,6 +52,9 @@ if (props.router) {
   if (!route) {
     throw new Error('😱oh, 要想使用路由模式, vue router必须安装！')
   }
+
+  // 监听路由变化更改指示器位置
+  watch(() => route?.path, () => nextTick(changeOffset))
 }
 
 // 定义渲染组件

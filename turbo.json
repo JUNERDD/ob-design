@@ -1,5 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -9,6 +10,8 @@
       "persistent": true,
       "cache": false
     },
-    "patch": {}
+    "patch": {},
+    "lint": {},
+    "lint:fix": {}
   }
 }

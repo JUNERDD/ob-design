@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ObCard } from 'obdesign'
+import { ObCard } from '@obdesign/components'
 
 defineOptions({ name: 'HomeStack' })
 

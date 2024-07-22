@@ -19,12 +19,12 @@ const styleProps = useMergeStyleProps(_default, props, theme)
 
 <template>
   <div :class="cn(_style(styleProps), props.class)">
-    <div :class="cn(lineStyle)" />
-    <div :class="cn(lineStyle, 'animate-delay-60 opacity-80')" />
-    <div :class="cn(lineStyle, 'animate-delay-120 opacity-60')" />
-    <div :class="cn(lineStyle, 'animate-delay-180 opacity-40')" />
-    <div :class="cn(lineStyle, 'animate-delay-240 opacity-20')" />
-    <div :class="cn(lineStyle, 'animate-delay-300 opacity-10')" />
+    <div :class="cn(lineStyle(styleProps), lineClass)" />
+    <div :class="cn(lineStyle(styleProps), 'animate-delay-60 opacity-80', lineClass)" />
+    <div :class="cn(lineStyle(styleProps), 'animate-delay-120 opacity-60', lineClass)" />
+    <div :class="cn(lineStyle(styleProps), 'animate-delay-180 opacity-40', lineClass)" />
+    <div :class="cn(lineStyle(styleProps), 'animate-delay-240 opacity-20', lineClass)" />
+    <div :class="cn(lineStyle(styleProps), 'animate-delay-300 opacity-10', lineClass)" />
   </div>
 </template>
 

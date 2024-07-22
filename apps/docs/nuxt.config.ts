@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// https://nuxt.com/docs/components/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       splineUnderDevelopmentUrl: '',
     },
   },
-  modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image'],
+  modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image', '@nuxt/content'],
   vite: {
     assetsInclude: ['**/*.splinecode'],
   },

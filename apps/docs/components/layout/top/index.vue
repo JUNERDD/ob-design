@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ITabGroupLabelItem } from 'obdesign'
-import { ObButton, ObTabGroup } from 'obdesign'
+import type { ITabGroupLabelItem } from '@obdesign/components'
+import { ObButton, ObTabGroup } from '@obdesign/components'
 
 // 初始化tab值
 const tabValue = defineModel()
