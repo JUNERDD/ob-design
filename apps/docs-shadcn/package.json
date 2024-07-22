@@ -23,6 +23,7 @@
   "devDependencies": {
     "@config/eslint": "workspace:*",
     "@iconify-json/heroicons": "^1.1.22",
+    "@iconify-json/logos": "^1.1.43",
     "@iconify-json/mdi": "^1.1.67",
     "@iconify-json/noto": "^1.1.18",
     "@iconify-json/vscode-icons": "^1.1.36",

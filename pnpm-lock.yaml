@@ -130,6 +130,9 @@ importers:
       '@iconify-json/heroicons':
         specifier: ^1.1.22
         version: 1.1.22
+      '@iconify-json/logos':
+        specifier: ^1.1.43
+        version: 1.1.43
       '@iconify-json/mdi':
         specifier: ^1.1.67
         version: 1.1.67
@@ -1001,6 +1004,9 @@ packages:
 
   '@iconify-json/icon-park-solid@1.1.14':
     resolution: {integrity: sha512-oXV3KoGjd6vyOArhhumrCAuvG9+1G4+FHQEy76WbnU6lDoir8jnkGyDxmMTfmz831eHCUXC/pqnS1Gr0TfEPUg==}
+
+  '@iconify-json/logos@1.1.43':
+    resolution: {integrity: sha512-UtvL1yDHUr9dl1Tqihh6K9m5dmbYKOYyLf3i9aKhymSW76QjOCGjpgQc0PQ4GJCAdU1cAMu+WO61TgPxdonrlg==}
 
   '@iconify-json/lucide@1.1.200':
     resolution: {integrity: sha512-imZeWdgMcJ6xZ15U0h35kehDcrVShvrTui3RvuY/ZUxFGC23wxPt1OQXiu+KQ/GEiujGEeOtQ1BL3Jf+7dQiqw==}
@@ -6519,6 +6525,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/icon-park-solid@1.1.14':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/logos@1.1.43':
     dependencies:
       '@iconify/types': 2.0.0
 
