@@ -12,6 +12,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@obdesign/components": "workspace:*",
     "@obdesign/preset": "workspace:*",
     "nuxt": "^3.12.3",

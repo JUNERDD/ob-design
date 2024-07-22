@@ -1,3 +1,4 @@
+/* 头部和尾部 */
 header, footer {
   button{
     @apply rounded-sm !important;
@@ -8,6 +9,7 @@ header, footer {
   }
 }
 
+/* 尾部 */
 footer {
   .container {
     @apply justify-center !important;
@@ -37,4 +39,32 @@ footer {
 /* 首页问题 */
 .home-field-group {
   @apply mt-32 !important;
+}
+
+/* 侧边栏 */
+aside {
+  .px-3.py-2.mb-1.rounded-md.w-full {
+    @apply rounded-[0.75rem];
+  }
+}
+
+/* 主要内容 */
+main {
+  h1 {
+    @apply font-bold;
+  }
+
+  h2 {
+    a::before {
+      content: '# ';
+    }
+  }
+
+  nav {
+    @apply mb-9 !important;
+
+    a:not(.text-foreground) {
+      cursor: default;
+    }
+  }
 }
