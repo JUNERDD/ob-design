@@ -5,7 +5,7 @@
   "description": "一个基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设",
   "author": "JUNER",
   "license": "MIT",
-  "homepage": "https://github.com/JUNERDD/obdesign",
+  "homepage": "https://github.com/JUNERDD/ob-design",
   "keywords": [
     "vue",
     "components",
