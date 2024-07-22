@@ -99,4 +99,10 @@ main {
       @apply text-[#032F62] !important;
     }
   }
+
+  .pt-8.mt-10.border-t {
+    & > a {
+      @apply basis-2/5
+    }
+  }
 }
