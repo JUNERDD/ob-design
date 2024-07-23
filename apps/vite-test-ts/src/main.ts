@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
-import './style.css'
-import obdesign from '@obdesign/components'
+import obdesign from '@obdesign/components/plugin'
 import App from './App.vue'
 
 import 'virtual:uno.css'

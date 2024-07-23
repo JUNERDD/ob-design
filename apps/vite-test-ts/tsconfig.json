@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    // ...
+    "types": ["@obdesign/components"]
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "files": []
+}
