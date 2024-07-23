@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ESNext",
     "jsx": "preserve",
-    "lib": ["esnext", "dom"],
+    "lib": ["ESNext"],
     "useDefineForClassFields": true,
     "baseUrl": ".",
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "types": ["./types.d.ts"],
