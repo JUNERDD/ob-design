@@ -5,7 +5,7 @@ import type { CvaConfig, ICommonProps } from '../_types'
 /**
  * 封装cva
  */
-export function obCva<T extends ICommonProps>(base?: ClassValue, config?: CvaConfig<T>) {
+export function obCva<T extends ICommonProps>(base?: ClassValue, config?: CvaConfig<T>): ReturnType<typeof cva<T>> {
   // 需要类型转换（预防报错）
   return cva<T>(base, config as any)
 }

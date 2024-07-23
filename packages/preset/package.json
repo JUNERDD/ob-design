@@ -14,9 +14,13 @@
   "main": "./src/index.ts",
   "types": "./types.d.ts",
   "scripts": {
-    "patch": "pnpm version patch"
+    "patch": "pnpm version patch",
+    "build": "unbuild"
   },
   "dependencies": {
     "unocss": "^0.61.5"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
   }
 }

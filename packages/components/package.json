@@ -15,15 +15,13 @@
   "exports": {
     ".": "./src/index.ts",
     "./plugin": "./src/_plugin/index.ts",
-    "./auto": "./src/_plugin/auto.ts",
-    "./global": {
-      "types": "./declare/global.d.ts"
-    }
+    "./auto": "./src/_plugin/auto.ts"
   },
   "main": "./src/index.ts",
   "types": "./types.d.ts",
   "scripts": {
-    "patch": "pnpm version patch"
+    "patch": "pnpm version patch",
+    "build": "unbuild"
   },
   "dependencies": {
     "@splinetool/runtime": "^1.9.0",
@@ -36,6 +34,8 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
+    "clsx": "^2.1.1",
+    "unbuild": "^2.0.0",
     "unplugin-vue-components": "^0.27.3"
   }
 }
