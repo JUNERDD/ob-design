@@ -1,9 +1,6 @@
-<script setup>
-</script>
-
 <template>
   <div>
-    Nuxt module playground!
+    123
     <ObButton>123</ObButton>
   </div>
 </template>

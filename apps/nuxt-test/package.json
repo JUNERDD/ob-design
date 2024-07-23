@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@obdesign/nuxt": "workspace:*",
+    "@unocss/nuxt": "^0.61.5",
+    "@unocss/reset": "^0.61.5",
+    "nuxt": "^3.12.4",
+    "vue": "latest"
+  }
+}
