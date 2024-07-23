@@ -1,4 +1,4 @@
-import type { ClassValue } from 'class-variance-authority/types'
+import type { ClassValue } from 'class-variance-authority/dist/types'
 import type { Booleanish, NativeType } from '.'
 
 /**

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "jsx": "preserve",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "useDefineForClassFields": true,
     "baseUrl": ".",
     "module": "ESNext",

@@ -1,4 +1,4 @@
-import type { ClassProp, ClassValue, StringToBoolean } from 'class-variance-authority/types'
+import type { ClassProp, ClassValue, StringToBoolean } from 'class-variance-authority/dist/types'
 import type { Keyish } from '.'
 
 /**
