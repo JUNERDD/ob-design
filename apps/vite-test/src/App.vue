@@ -1,5 +1,4 @@
 <script setup>
-import { ObButton, ObLoadingBox, ObTabGroup } from '@obdesign/components'
 import { ref } from 'vue'
 
 // 初始化tab值
@@ -17,7 +16,7 @@ const isLoad = ref(true)
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center h-screen gap-2xl">
+  <div class="h-screen flex flex-col items-center justify-center gap-2xl">
     <ObButton class="mx-auto" variant="danger">
       按钮
     </ObButton>
@@ -29,7 +28,7 @@ const isLoad = ref(true)
     <div class="flex flex-col items-center justify-center gap-3">
       <div class="relative h-40 w-120 overflow-hidden border rounded-2xl">
         <ObLoadingBox v-model="isLoad" mask-mode>
-          <div class="w-full gap-3 h-10 flex-center bg-red">
+          <div class="h-10 w-full flex-center gap-3 bg-red">
             docs
           </div>
         </ObLoadingBox>

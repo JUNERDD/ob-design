@@ -12,6 +12,10 @@
     "unocss",
     "typescript"
   ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./plugin": "./src/plugin.ts"
+  },
   "main": "./src/index.ts",
   "types": "./types.d.ts",
   "scripts": {
