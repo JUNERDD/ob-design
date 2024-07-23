@@ -16,8 +16,8 @@ export default defineNuxtModule<ModuleOptions>({
     prefix: 'Ob',
   },
   setup(_options, _nuxt) {
-    // 生成组件名
-    const generateName = (name: string) => `${_options.prefix}${name}`
+    // 首字母大写
+    const prefix = _options.prefix.charAt(0).toUpperCase() + _options.prefix.slice(1)
 
     // 组件列表
     const cpnList = [['Button', 'ObButton'], ['Link', 'ObLink'], ['Theme', 'ObTheme'], ['LoadingBox', 'ObLoadingBox'], ['Spin', 'ObSpin'], ['TabGroup', 'ObTabGroup'], ['Modal', 'ObModal'], ['Section', 'ObSection'], ['SectionBlock', 'ObSectionBlock'], ['Spline3d', 'ObSpline3d'], ['Card', 'ObCard']]
@@ -25,7 +25,7 @@ export default defineNuxtModule<ModuleOptions>({
     // 注册组件
     cpnList.forEach(([name, exportName]) => {
       addComponent({
-        name: generateName(name), // 组件在vue模板中使用的名称
+        name: prefix + name, // 组件在vue模板中使用的名称
         export: exportName, // 组件在库中的到处名
         filePath: 'obdesign',
       })

@@ -11,7 +11,10 @@ interface IPluginPayload {
  * 挂载全局组件插件
  */
 export default function obdesign(app: App, payload?: IPluginPayload) {
-  const { prefix = 'Ob' } = payload || {}
+  const { prefix: _prefix = 'Ob' } = payload || {}
+
+  // 首字母大写
+  const prefix = _prefix.charAt(0).toUpperCase() + _prefix.slice(1)
 
   Object.entries(ob).forEach(([key, value]) => {
     if (isComponent(value)) {

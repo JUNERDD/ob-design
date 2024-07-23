@@ -8,6 +8,10 @@
     "generate": "nuxi generate"
   },
   "dependencies": {
+    "@unocss/reset": "^0.61.5",
     "nuxt": "^3.12.4"
+  },
+  "devDependencies": {
+    "@unocss/nuxt": "^0.61.5"
   }
 }

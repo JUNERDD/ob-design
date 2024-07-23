@@ -305,6 +305,19 @@ importers:
         specifier: ^2.0.26
         version: 2.0.28(typescript@5.5.4)
 
+  packages/nuxt/playground:
+    dependencies:
+      '@unocss/reset':
+        specifier: ^0.61.5
+        version: 0.61.5
+      nuxt:
+        specifier: ^3.12.4
+        version: 3.12.4(@parcel/watcher@2.4.1)(@types/node@20.14.11)(eslint@9.7.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(terser@5.31.3)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(vue-tsc@2.0.28(typescript@5.5.4))
+    devDependencies:
+      '@unocss/nuxt':
+        specifier: ^0.61.5
+        version: 0.61.5(magicast@0.3.4)(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(webpack@5.93.0)
+
   packages/obdesign:
     dependencies:
       '@obdesign/components':
@@ -9238,7 +9251,7 @@ snapshots:
 
   '@unocss/nuxt@0.61.5(magicast@0.3.4)(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(webpack@5.93.0)':
     dependencies:
-      '@nuxt/kit': 3.12.3(magicast@0.3.4)(rollup@4.18.1)
+      '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.18.1)
       '@unocss/config': 0.61.5
       '@unocss/core': 0.61.5
       '@unocss/preset-attributify': 0.61.5
