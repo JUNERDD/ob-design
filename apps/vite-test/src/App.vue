@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { ObButton } from '@obdesign/components'
+import { ObButton } from 'obdesign'
 import { ElButton } from 'element-plus'
 
 // 初始化tab值

@@ -15,14 +15,16 @@
   ],
   "exports": {
     ".": "./src/index.ts",
-    "./preset": "./src/preset.ts"
+    "./preset": "./src/preset.ts",
+    "./plugin": "./src/plugin.ts"
   },
   "main": "./src/index.ts",
+  "types": "./types.d.ts",
   "scripts": {
     "patch": "pnpm version patch"
   },
   "dependencies": {
-    "@obdesign/components": "latest",
-    "@obdesign/preset": "latest"
+    "@obdesign/components": "workspace:*",
+    "@obdesign/preset": "workspace:*"
   }
 }

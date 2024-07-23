@@ -157,18 +157,15 @@ importers:
 
   apps/vite-test:
     dependencies:
-      '@obdesign/components':
-        specifier: workspace:*
-        version: link:../../packages/components
-      '@obdesign/preset':
-        specifier: workspace:*
-        version: link:../../packages/preset
       '@unocss/reset':
         specifier: ^0.61.5
         version: 0.61.5
       element-plus:
         specifier: ^2.7.7
         version: 2.7.7(vue@3.4.32(typescript@5.5.3))
+      obdesign:
+        specifier: workspace:*
+        version: link:../../packages/obdesign
       vue:
         specifier: ^3.4.31
         version: 3.4.32(typescript@5.5.3)
@@ -262,14 +259,20 @@ importers:
         specifier: ^4.4.0
         version: 4.4.0(vue@3.4.32(typescript@5.5.3))
 
+  packages/nuxt:
+    dependencies:
+      obdesign:
+        specifier: workspace:*
+        version: link:../obdesign
+
   packages/obdesign:
     dependencies:
       '@obdesign/components':
-        specifier: latest
-        version: 0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+        specifier: workspace:*
+        version: link:../components
       '@obdesign/preset':
-        specifier: latest
-        version: 0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+        specifier: workspace:*
+        version: link:../preset
 
   packages/preset:
     dependencies:
@@ -1267,12 +1270,6 @@ packages:
 
   '@nuxtjs/tailwindcss@6.12.1':
     resolution: {integrity: sha512-UKmaPRVpxlFqLorhL6neEba2tySlsj6w6yDb7jzS6A0AAjyBQ6k3BQqWO+AaTy2iQLX7eR+1yj3/w43HzY8RtA==}
-
-  '@obdesign/components@0.0.4':
-    resolution: {integrity: sha512-zscmV5RXzReyKhErGeTKiFmuIoZbzaCCNptWX94khycCVt9VOr+TUn5iuHWpTUOffBUhGeA//T3bPBfHAMgHdg==}
-
-  '@obdesign/preset@0.0.4':
-    resolution: {integrity: sha512-ninPfS3lL3jQmK1pAC3rWjhD6GpwFFq/ipCww5gFtuHxXho4Zuoi0QgPXXRM7yjRefXIU6KVBIfQ3cmTFbNugg==}
 
   '@oxc-parser/wasm@0.1.0':
     resolution: {integrity: sha512-oA7XhTbg9rRBJhIzxCNhJwYmON/9LFAH4GBQxl7HWmGSS6HTrb2t6Peq82nxY0W7knguH52neh9T7zs27FVvsQ==}
@@ -7506,35 +7503,6 @@ snapshots:
       - supports-color
       - ts-node
       - uWebSockets.js
-
-  '@obdesign/components@0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
-    dependencies:
-      '@splinetool/runtime': 1.9.0
-      '@vueuse/core': 10.11.0(vue@3.4.32(typescript@5.5.3))
-      class-variance-authority: 0.7.0
-      klona: 2.0.6
-      tailwind-merge: 2.4.0
-      unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-      vue: 3.4.32(typescript@5.5.3)
-      vue-router: 4.4.0(vue@3.4.32(typescript@5.5.3))
-    transitivePeerDependencies:
-      - '@unocss/webpack'
-      - '@vue/composition-api'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
-  '@obdesign/preset@0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
-    dependencies:
-      unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-    transitivePeerDependencies:
-      - '@unocss/webpack'
-      - postcss
-      - rollup
-      - supports-color
-      - vite
 
   '@oxc-parser/wasm@0.1.0': {}
 
