@@ -15,6 +15,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./plugin": "./src/_plugin/index.ts",
+    "./auto": "./src/_plugin/auto.ts",
     "./global": {
       "types": "./declare/global.d.ts"
     }
@@ -33,5 +34,8 @@
     "unocss": "^0.61.5",
     "vue": "^3.4.31",
     "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "unplugin-vue-components": "^0.27.3"
   }
 }

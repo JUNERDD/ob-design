@@ -16,7 +16,8 @@
   "exports": {
     ".": "./src/index.ts",
     "./preset": "./src/preset.ts",
-    "./plugin": "./src/plugin.ts"
+    "./plugin": "./src/plugin.ts",
+    "./auto": "./src/auto.ts"
   },
   "main": "./src/index.ts",
   "types": "./types.d.ts",
