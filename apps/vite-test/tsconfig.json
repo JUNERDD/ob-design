@@ -8,7 +8,7 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "types": ["@obdesign/components"],
+    "types": ["@obdesign/components", "element-plus/global"],
     "strict": true,
     "sourceMap": true,
     "esModuleInterop": true,

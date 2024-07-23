@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { ObButton } from '@obdesign/components'
+import { ElButton } from 'element-plus'
 
 // 初始化tab值
 const tabValue = defineModel({ default: '/docs' })
@@ -20,6 +22,8 @@ const isLoad = ref(true)
     <ObButton class="mx-auto" variant="danger">
       按钮
     </ObButton>
+
+    <ElButton>13</ElButton>
 
     <Suspense>
       <ObTabGroup v-model="tabValue" class="lt-sm:hidden" :items />

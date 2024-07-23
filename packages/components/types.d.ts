@@ -28,3 +28,16 @@ declare module '@vue/runtime-dom' {
 declare module 'vue' {
   export interface GlobalComponents extends _Components {}
 }
+
+// 声明组件常量类型
+export declare const ObButton: _Components['ObButton']
+export declare const ObCard: _Components['ObCard']
+export declare const ObLink: _Components['ObLink']
+export declare const ObLoadingBox: _Components['ObLoadingBox']
+export declare const ObSpin: _Components['ObSpin']
+export declare const ObTabGroup: _Components['ObTabGroup']
+export declare const ObTheme: _Components['ObTheme']
+export declare const ObModal: _Components['ObModal']
+export declare const ObSection: _Components['ObSection']
+export declare const ObSectionBlock: _Components['ObSectionBlock']
+export declare const ObSpline3d: _Components['ObSpline3d']

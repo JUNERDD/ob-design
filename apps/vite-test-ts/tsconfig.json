@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    // ...
-    "types": ["@obdesign/components"]
+    "types": ["@obdesign/components", "element-plus/global"]
   },
   "references": [
     {
