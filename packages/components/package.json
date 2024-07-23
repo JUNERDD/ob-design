@@ -14,7 +14,10 @@
   ],
   "exports": {
     ".": "./src/index.ts",
-    "./plugin": "./src/plugin.ts"
+    "./plugin": "./src/_plugin/index.ts",
+    "./global": {
+      "types": "./declare/global.d.ts"
+    }
   },
   "main": "./src/index.ts",
   "types": "./types.d.ts",
