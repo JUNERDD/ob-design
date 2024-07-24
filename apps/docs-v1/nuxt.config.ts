@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   modules: ['@unocss/nuxt', '@nuxtjs/google-fonts', '@obdesign/nuxt'],
   extends: ['shadcn-docs-nuxt'],
   compatibilityDate: '2024-07-06',
+  experimental: {
+    externalVue: true,
+  },
   css: ['@/assets/css/main.css'],
   googleFonts: {
     families: {
