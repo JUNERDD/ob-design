@@ -32,4 +32,4 @@ logs
 .vercel
 
 # npm
-.npmignore
+# .npmignore
