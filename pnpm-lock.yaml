@@ -106,8 +106,8 @@ importers:
         specifier: ^3.2.0
         version: 3.2.0(magicast@0.3.4)(rollup@4.18.1)
       '@obdesign/nuxt':
-        specifier: workspace:*
-        version: link:../../packages/nuxt
+        specifier: latest
+        version: 0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1))(magicast@0.3.4)(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
       nuxt:
         specifier: ^3.12.4
         version: 3.12.4(@parcel/watcher@2.4.1)(@types/node@20.14.11)(eslint@9.7.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(terser@5.31.3)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(vue-tsc@2.0.28(typescript@5.5.3))
@@ -1415,6 +1415,9 @@ packages:
 
   '@obdesign/components@0.0.4':
     resolution: {integrity: sha512-zscmV5RXzReyKhErGeTKiFmuIoZbzaCCNptWX94khycCVt9VOr+TUn5iuHWpTUOffBUhGeA//T3bPBfHAMgHdg==}
+
+  '@obdesign/nuxt@0.0.5':
+    resolution: {integrity: sha512-B3yowrNgdo4zf4hplNkFVOuaOrGZbvV7fPze9RmBwF4fkXAnNUJmWpF5Ia8e8pU2BTl18FWDmPRx5wp7ojtwJg==, tarball: https://registry.npmjs.org/@obdesign/nuxt/-/nuxt-0.0.5.tgz}
 
   '@obdesign/preset@0.0.4':
     resolution: {integrity: sha512-ninPfS3lL3jQmK1pAC3rWjhD6GpwFFq/ipCww5gFtuHxXho4Zuoi0QgPXXRM7yjRefXIU6KVBIfQ3cmTFbNugg==}
@@ -7991,6 +7994,25 @@ snapshots:
       - ts-node
       - uWebSockets.js
 
+  '@obdesign/components@0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
+    dependencies:
+      '@splinetool/runtime': 1.9.0
+      '@vueuse/core': 10.11.0(vue@3.4.33(typescript@5.5.3))
+      class-variance-authority: 0.7.0
+      klona: 2.0.6
+      tailwind-merge: 2.4.0
+      unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+      vue: 3.4.33(typescript@5.5.3)
+      vue-router: 4.4.0(vue@3.4.33(typescript@5.5.3))
+    transitivePeerDependencies:
+      - '@unocss/webpack'
+      - '@vue/composition-api'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+
   '@obdesign/components@0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
     dependencies:
       '@splinetool/runtime': 1.9.0
@@ -8004,6 +8026,20 @@ snapshots:
     transitivePeerDependencies:
       - '@unocss/webpack'
       - '@vue/composition-api'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+
+  '@obdesign/nuxt@0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1))(magicast@0.3.4)(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
+    dependencies:
+      '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.18.1)
+      obdesign: 0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+    transitivePeerDependencies:
+      - '@unocss/webpack'
+      - '@vue/composition-api'
+      - magicast
       - postcss
       - rollup
       - supports-color
@@ -12741,6 +12777,19 @@ snapshots:
       pathe: 1.1.2
       pkg-types: 1.1.3
       ufo: 1.5.4
+
+  obdesign@0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3)):
+    dependencies:
+      '@obdesign/components': 0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+      '@obdesign/preset': 0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+    transitivePeerDependencies:
+      - '@unocss/webpack'
+      - '@vue/composition-api'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
 
   obdesign@0.0.4(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3)):
     dependencies:

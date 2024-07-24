@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@obdesign/nuxt": "workspace:*",
+    "@obdesign/nuxt": "latest",
     "nuxt": "^3.12.4",
     "shadcn-docs-nuxt": "^0.4.2",
     "vue": "^3.4.33",
