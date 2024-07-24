@@ -12,12 +12,24 @@
     "preset",
     "typescript"
   ],
-  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "patch": "pnpm version patch"
+    "patch": "pnpm version patch",
+    "build": "unbuild"
   },
   "dependencies": {
     "@nuxt/kit": "^3.12.4",
     "obdesign": "workspace:*"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
   }
 }

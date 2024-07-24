@@ -1,4 +1,5 @@
 import { addComponent, defineNuxtModule } from '@nuxt/kit'
+import type { NuxtModule } from '@nuxt/schema'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -31,4 +32,4 @@ export default defineNuxtModule<ModuleOptions>({
       })
     })
   },
-})
+}) satisfies NuxtModule<ModuleOptions>

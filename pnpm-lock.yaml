@@ -301,6 +301,10 @@ importers:
       obdesign:
         specifier: workspace:*
         version: link:../obdesign
+    devDependencies:
+      unbuild:
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.5.4)(vue-tsc@2.0.28(typescript@5.5.4))
 
   packages/obdesign:
     dependencies:
