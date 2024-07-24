@@ -1,5 +1,5 @@
 import type { HTMLAttributes } from 'vue'
-import type { ClassValue } from 'class-variance-authority/dist/types'
+import type { ClassValue } from 'class-variance-authority/types'
 import type { ICommonProps } from '../../../index'
 
 /**

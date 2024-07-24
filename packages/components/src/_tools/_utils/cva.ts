@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority'
-import type { ClassValue } from 'class-variance-authority/dist/types'
+import type { ClassValue } from 'class-variance-authority/types'
 import type { CvaConfig, ICommonProps } from '../_types'
 
 /**

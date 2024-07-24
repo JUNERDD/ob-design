@@ -29,7 +29,7 @@
       "require": "./dist/_plugin/auto.js"
     }
   },
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "types": "./types.d.ts",
   "scripts": {
     "patch": "pnpm version patch",
