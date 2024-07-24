@@ -3,28 +3,36 @@ title: Home
 navigation: false
 ---
 
-::hero
+::hero{class="home-hero"}
 ---
 announcement:
-  title: 'Release v0.4.1'
-  icon: 'noto:party-popper'
+  title: '正在积极开发中'
+  icon: 'noto:hammer-and-pick'
   to: /getting-started/changelog
 actions:
-  - name: Get Started
+  - name: 快速开始
     to: /getting-started
   - name: GitHub
     variant: outline
-    to: https://github.com/ZTL-UwU/shadcn-docs-nuxt
+    to: https://github.com/JUNERDD/ob-design
     leftIcon: 'lucide:github'
 ---
 
 #title
-Effortless and Beautiful<br>Docs Template.
+[对 SSR 友好 / 完全 TypeScrip :br UNOCSS 组件库]{style="line-height: 1.3;"}
 
 #description
-Beautifully designed Nuxt Content template built with shadcn-vue.<br>Customizable. Compatible. Open Source.
+Beautifully designed Vue Components built with Ob Design. :br click the button below to quickly experience.
 ::
 
-<div class="border rounded-lg shadow-md">
-  <iframe src="/getting-started/introduction" height="700" width="100%" class="rounded-lg" scrolling="no" frameborder="0">
-</div>
+::stack
+::
+
+::field-group{class="home-field-group"}
+  ::field{name="项目是开源的吗？" type="2024-7-18"}
+  是的！项目是 100% 开源，您可以敬请体验！
+  ::
+  ::field{name="未来计划如何？" type="2024-7-21"}
+  完善文档、继续完善更多组件、推出完整的设计系统。
+  ::
+::
