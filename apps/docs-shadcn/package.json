@@ -13,8 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@obdesign/components": "workspace:*",
-    "@obdesign/preset": "workspace:*",
+    "@obdesign/nuxt": "workspace:*",
     "nuxt": "^3.12.3",
     "shadcn-docs-nuxt": "latest",
     "vue": "^3.4.31",
