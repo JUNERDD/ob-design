@@ -11,7 +11,14 @@
     "preset",
     "typescript"
   ],
-  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./types.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
   "types": "./types.d.ts",
   "scripts": {
     "patch": "pnpm version patch",

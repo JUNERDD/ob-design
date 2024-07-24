@@ -13,11 +13,23 @@
     "typescript"
   ],
   "exports": {
-    ".": "./src/index.ts",
-    "./plugin": "./src/_plugin/index.ts",
-    "./auto": "./src/_plugin/auto.ts"
+    ".": {
+      "types": "./types.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./plugin": {
+      "types": "./dist/_plugin/index.d.ts",
+      "import": "./dist/_plugin/index.mjs",
+      "require": "./dist/_plugin/index.js"
+    },
+    "./auto": {
+      "types": "./dist/_plugin/auto.d.ts",
+      "import": "./dist/_plugin/auto.mjs",
+      "require": "./dist/_plugin/auto.js"
+    }
   },
-  "main": "./src/index.ts",
+  "main": "./dist/index.cjs",
   "types": "./types.d.ts",
   "scripts": {
     "patch": "pnpm version patch",

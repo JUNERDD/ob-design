@@ -14,18 +14,38 @@
     "typescript"
   ],
   "exports": {
-    ".": "./src/index.ts",
-    "./preset": "./src/preset.ts",
-    "./plugin": "./src/plugin.ts",
-    "./auto": "./src/auto.ts"
+    ".": {
+      "types": "./types.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./preset": {
+      "types": "./dist/preset.d.ts",
+      "import": "./dist/preset.mjs",
+      "require": "./dist/preset.cjs"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.mjs",
+      "require": "./dist/plugin.cjs"
+    },
+    "./auto": {
+      "types": "./dist/auto.d.ts",
+      "import": "./dist/auto.mjs",
+      "require": "./dist/auto.cjs"
+    }
   },
-  "main": "./src/index.ts",
+  "main": "./dist/index.cjs",
   "types": "./types.d.ts",
   "scripts": {
-    "patch": "pnpm version patch"
+    "patch": "pnpm version patch",
+    "build": "pnpm unbuild"
   },
   "dependencies": {
     "@obdesign/components": "workspace:*",
     "@obdesign/preset": "workspace:*"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
   }
 }

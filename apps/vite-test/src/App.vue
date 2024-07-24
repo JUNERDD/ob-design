@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { ObButton } from 'obdesign'
 import { ElButton } from 'element-plus'
+import { ObButton } from 'obdesign'
 
 // 初始化tab值
 const tabValue = defineModel({ default: '/docs' })

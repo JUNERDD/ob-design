@@ -310,6 +310,10 @@ importers:
       '@obdesign/preset':
         specifier: workspace:*
         version: link:../preset
+    devDependencies:
+      unbuild:
+        specifier: ^2.0.0
+        version: 2.0.0(typescript@5.5.4)(vue-tsc@2.0.28(typescript@5.5.4))
 
   packages/preset:
     dependencies:
