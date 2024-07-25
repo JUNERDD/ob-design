@@ -1,7 +1,7 @@
 {
   "name": "shadcn-docs-nuxt-starter",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -12,14 +12,18 @@
   "dependencies": {
     "@nuxt/vue-renderer": "^2.18.1",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@obdesign/components": "latest",
-    "@obdesign/preset": "latest",
+    "@obdesign/nuxt": "latest",
     "nuxt": "^3.12.4",
     "shadcn-docs-nuxt": "^0.4.2",
     "vue": "^3.4.33",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
+    "@iconify-json/icon-park-solid": "^1.1.14",
+    "@iconify-json/noto": "^1.1.18",
+    "@iconify-json/simple-icons": "^1.1.109",
+    "@iconify-json/vscode-icons": "^1.1.36",
     "@unocss/nuxt": "^0.61.5"
-  }
+  },
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
