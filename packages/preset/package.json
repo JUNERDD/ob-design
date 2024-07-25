@@ -1,7 +1,7 @@
 {
   "name": "@obdesign/preset",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "一个 Unocss 预设",
   "author": "JUNER",
   "license": "MIT",

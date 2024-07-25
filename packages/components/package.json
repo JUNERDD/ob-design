@@ -1,7 +1,7 @@
 {
   "name": "@obdesign/components",
   "type": "module",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "一个基于 Vue 3 和 Unocss 的组件库",
   "author": "JUNER",
   "license": "MIT",
@@ -36,6 +36,7 @@
     "build": "unbuild"
   },
   "dependencies": {
+    "@splinetool/runtime": "^1.9.0",
     "@vueuse/core": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "klona": "^2.0.6",
@@ -45,7 +46,6 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
-    "@splinetool/runtime": "^1.9.0",
     "clsx": "^2.1.1",
     "unbuild": "^2.0.0",
     "unplugin-vue-components": "^0.27.3"
