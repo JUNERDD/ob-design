@@ -7,11 +7,20 @@ export default defineNuxtConfig({
       splineUnderDevelopmentUrl: '',
     },
   },
-  modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image', '@nuxt/content'],
+  modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image', '@nuxt/content', '@nuxtjs/google-fonts'],
   vite: {
     assetsInclude: ['**/*.splinecode'],
   },
-  css: ['@unocss/reset/tailwind-compat.css'],
+  build: {
+    transpile: ['@obdesign/components'],
+  },
+  css: ['@unocss/reset/tailwind-compat.css', '@/assets/css/main.css'],
+  googleFonts: {
+    families: {
+      'Inter': [400, 700, 900],
+      'Noto Sans SC': [400, 700, 900],
+    },
+  },
   eslint: {
     checker: true,
     config: {

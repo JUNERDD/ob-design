@@ -1,3 +1,7 @@
+<script setup>
+import { ObButton } from '@obdesign/components'
+</script>
+
 <template>
   <div>
     123
