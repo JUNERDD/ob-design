@@ -1,0 +1,25 @@
+{
+  "name": "shadcn-docs-nuxt-starter",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/vue-renderer": "^2.18.1",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@obdesign/components": "latest",
+    "@obdesign/preset": "latest",
+    "nuxt": "^3.12.4",
+    "shadcn-docs-nuxt": "^0.4.2",
+    "vue": "^3.4.33",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@unocss/nuxt": "^0.61.5"
+  }
+}

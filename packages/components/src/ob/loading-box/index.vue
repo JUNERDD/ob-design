@@ -14,7 +14,7 @@ const model = defineModel()
 <template>
   <!-- 普通模式：toggle -->
   <Transition v-if="!maskMode" mode="out-in" v-bind="transitionProps">
-    <ObSpin v-if="model" v-bind="spinProps" :class="cn(spinStyle, spinClass)" />
+    <ObSpin v-if="model" v-bind="spinProps" :box-class="cn(spinStyle, spinClass)" />
     <slot v-else />
   </Transition>
 
@@ -23,7 +23,7 @@ const model = defineModel()
     <Transition v-bind="transitionProps">
       <div v-if="model" :class="cn(maskBoxStyle, maskBoxClass)">
         <div :class="cn(maskStyle, maskClass)" />
-        <ObSpin v-bind="spinProps" :class="cn(spinStyle, 'absolute', spinClass)" />
+        <ObSpin v-bind="spinProps" :box-class="cn(spinStyle, 'absolute', spinClass)" />
       </div>
     </Transition>
     <slot />

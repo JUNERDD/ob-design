@@ -1,21 +1,39 @@
 {
   "name": "@obdesign/components",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "一个基于 Vue 3 和 Unocss 的组件库",
   "author": "JUNER",
   "license": "MIT",
-  "homepage": "https://github.com/JUNERDD/obdesign",
+  "homepage": "https://github.com/JUNERDD/ob-design",
   "keywords": [
     "vue",
     "components",
     "unocss",
     "typescript"
   ],
-  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./types.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./plugin": {
+      "types": "./dist/_plugin/index.d.ts",
+      "import": "./dist/_plugin/index.mjs",
+      "require": "./dist/_plugin/index.js"
+    },
+    "./auto": {
+      "types": "./dist/_plugin/auto.d.ts",
+      "import": "./dist/_plugin/auto.mjs",
+      "require": "./dist/_plugin/auto.js"
+    }
+  },
+  "main": "./dist/index.js",
   "types": "./types.d.ts",
   "scripts": {
-    "patch": "pnpm version patch"
+    "patch": "pnpm version patch",
+    "build": "unbuild"
   },
   "dependencies": {
     "@splinetool/runtime": "^1.9.0",
@@ -26,5 +44,10 @@
     "unocss": "^0.61.5",
     "vue": "^3.4.31",
     "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "clsx": "^2.1.1",
+    "unbuild": "^2.0.0",
+    "unplugin-vue-components": "^0.27.3"
   }
 }

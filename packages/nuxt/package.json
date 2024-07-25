@@ -1,0 +1,37 @@
+{
+  "name": "@obdesign/nuxt",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "一个基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设",
+  "license": "MIT",
+  "homepage": "https://github.com/JUNERDD/ob-design",
+  "keywords": [
+    "vue",
+    "components",
+    "unocss",
+    "preset",
+    "typescript"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./types.d.ts",
+  "scripts": {
+    "patch": "pnpm version patch",
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.12.4",
+    "@obdesign/components": "latest",
+    "@obdesign/preset": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/schema": "^3.12.4",
+    "unbuild": "^2.0.0"
+  }
+}

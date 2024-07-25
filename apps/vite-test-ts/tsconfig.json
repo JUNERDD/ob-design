@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "types": ["@obdesign/components", "element-plus/global"]
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "files": []
+}

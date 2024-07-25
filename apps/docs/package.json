@@ -14,8 +14,8 @@
   "dependencies": {
     "@nuxt/content": "^2.13.2",
     "@nuxt/image": "^1.7.0",
-    "@obdesign/components": "workspace:*",
-    "@obdesign/preset": "workspace:*",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@obdesign/nuxt": "latest",
     "@splinetool/runtime": "^1.9.0",
     "@unocss/reset": "^0.61.5",
     "@vueuse/core": "^10.11.0",
