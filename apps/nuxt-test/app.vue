@@ -1,5 +1,5 @@
 <script setup>
-import { ObButton } from '@obdesign/components'
+// import { ObButton } from '@obdesign/components'
 </script>
 
 <template>

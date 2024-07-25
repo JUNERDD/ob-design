@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt'],
+  modules: ['@unocss/nuxt', '@obdesign/nuxt'],
   build: {
     transpile: ['@obdesign/components'],
   },

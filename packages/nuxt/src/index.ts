@@ -28,7 +28,7 @@ export default defineNuxtModule<ModuleOptions>({
       addComponent({
         name: prefix + name, // 组件在vue模板中使用的名称
         export: exportName, // 组件在库中的到处名
-        filePath: 'obdesign',
+        filePath: '@obdesign/components', // 组件在库中的路径
       })
     })
   },

@@ -10,8 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@obdesign/components": "latest",
-    "@obdesign/preset": "latest",
+    "@obdesign/nuxt": "workspace:*",
     "@unocss/nuxt": "^0.61.5",
     "@unocss/reset": "^0.61.5",
     "nuxt": "^3.12.4",

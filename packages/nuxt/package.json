@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.12.4",
-    "obdesign": "latest"
+    "@obdesign/components": "latest",
+    "@obdesign/preset": "latest"
   },
   "devDependencies": {
     "unbuild": "^2.0.0"

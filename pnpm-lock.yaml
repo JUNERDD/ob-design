@@ -136,12 +136,9 @@ importers:
 
   apps/nuxt-test:
     dependencies:
-      '@obdesign/components':
-        specifier: latest
-        version: 0.0.6(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-      '@obdesign/preset':
-        specifier: latest
-        version: 0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+      '@obdesign/nuxt':
+        specifier: workspace:*
+        version: link:../../packages/nuxt
       '@unocss/nuxt':
         specifier: ^0.61.5
         version: 0.61.5(magicast@0.3.4)(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(webpack@5.93.0)
@@ -280,9 +277,12 @@ importers:
       '@nuxt/kit':
         specifier: ^3.12.4
         version: 3.12.4(magicast@0.3.4)(rollup@4.18.1)
-      obdesign:
+      '@obdesign/components':
         specifier: latest
-        version: 0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+        version: 0.0.6(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+      '@obdesign/preset':
+        specifier: latest
+        version: 0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
     devDependencies:
       unbuild:
         specifier: ^2.0.0
@@ -4684,9 +4684,6 @@ packages:
     engines: {node: ^14.16.0 || >=16.10.0}
     hasBin: true
 
-  obdesign@0.0.5:
-    resolution: {integrity: sha512-sT60BUZn91veO5rJ7+wLrAc63mziNA3ERdzbYlchWrKNVTpDNkoHpG+fUrdPDdDJTcGCoip2WcAYh38ctY0XsA==}
-
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
@@ -8147,25 +8144,6 @@ snapshots:
       unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
       vue: 3.4.33(typescript@5.5.3)
       vue-router: 4.4.0(vue@3.4.33(typescript@5.5.3))
-    transitivePeerDependencies:
-      - '@unocss/webpack'
-      - '@vue/composition-api'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
-  '@obdesign/components@0.0.6(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
-    dependencies:
-      '@splinetool/runtime': 1.9.0
-      '@vueuse/core': 10.11.0(vue@3.4.33(typescript@5.5.4))
-      class-variance-authority: 0.7.0
-      klona: 2.0.6
-      tailwind-merge: 2.4.0
-      unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-      vue: 3.4.33(typescript@5.5.4)
-      vue-router: 4.4.0(vue@3.4.33(typescript@5.5.4))
     transitivePeerDependencies:
       - '@unocss/webpack'
       - '@vue/composition-api'
@@ -13018,19 +12996,6 @@ snapshots:
       pathe: 1.1.2
       pkg-types: 1.1.3
       ufo: 1.5.4
-
-  obdesign@0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3)):
-    dependencies:
-      '@obdesign/components': 0.0.6(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-      '@obdesign/preset': 0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-    transitivePeerDependencies:
-      - '@unocss/webpack'
-      - '@vue/composition-api'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
 
   object-assign@4.1.1: {}
 
