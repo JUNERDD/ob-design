@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       splineUnderDevelopmentUrl: '',
     },
   },
-  modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image', '@nuxt/content', '@nuxtjs/google-fonts'],
+  modules: ['@nuxt/eslint', '@unocss/nuxt', '@nuxt/image', '@nuxt/content', '@nuxtjs/google-fonts', '@obdesign/nuxt'],
   vite: {
     assetsInclude: ['**/*.splinecode'],
   },

@@ -32,12 +32,9 @@ importers:
       '@nuxtjs/google-fonts':
         specifier: ^3.2.0
         version: 3.2.0(magicast@0.3.4)(rollup@4.18.1)
-      '@obdesign/components':
-        specifier: latest
-        version: 0.0.6(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0(esbuild@0.21.5)))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-      '@obdesign/preset':
-        specifier: latest
-        version: 0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0(esbuild@0.21.5)))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+      '@obdesign/nuxt':
+        specifier: workspace:*
+        version: link:../../packages/nuxt
       '@splinetool/runtime':
         specifier: ^1.9.0
         version: 1.9.0
@@ -8115,25 +8112,6 @@ snapshots:
       - ts-node
       - uWebSockets.js
 
-  '@obdesign/components@0.0.6(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0(esbuild@0.21.5)))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
-    dependencies:
-      '@splinetool/runtime': 1.9.0
-      '@vueuse/core': 10.11.0(vue@3.4.33(typescript@5.5.3))
-      class-variance-authority: 0.7.0
-      klona: 2.0.6
-      tailwind-merge: 2.4.0
-      unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0(esbuild@0.21.5)))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-      vue: 3.4.33(typescript@5.5.3)
-      vue-router: 4.4.0(vue@3.4.33(typescript@5.5.3))
-    transitivePeerDependencies:
-      - '@unocss/webpack'
-      - '@vue/composition-api'
-      - postcss
-      - rollup
-      - supports-color
-      - typescript
-      - vite
-
   '@obdesign/components@0.0.6(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
     dependencies:
       '@splinetool/runtime': 1.9.0
@@ -8170,16 +8148,6 @@ snapshots:
       - rollup
       - supports-color
       - typescript
-      - vite
-
-  '@obdesign/preset@0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0(esbuild@0.21.5)))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
-    dependencies:
-      unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0(esbuild@0.21.5)))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
-    transitivePeerDependencies:
-      - '@unocss/webpack'
-      - postcss
-      - rollup
-      - supports-color
       - vite
 
   '@obdesign/preset@0.0.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
