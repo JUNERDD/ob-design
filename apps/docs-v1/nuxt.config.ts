@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     externalVue: true,
   },
   css: ['@/assets/css/main.css'],
+  build: {
+    transpile: ['@obdesign/components'],
+  },
   googleFonts: {
     families: {
       'Inter': [400, 700, 900],

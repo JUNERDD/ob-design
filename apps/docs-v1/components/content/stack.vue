@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ObCard } from '@obdesign/components'
+
 defineOptions({ name: 'HomeStack' })
 
 const homeStack = useHomeStack()

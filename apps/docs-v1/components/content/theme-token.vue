@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ObButton, ObLink, ObSpin, ObTabGroup, ObTheme } from '@obdesign/components'
 </script>
 
 <template>
