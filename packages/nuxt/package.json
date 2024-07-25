@@ -1,7 +1,7 @@
 {
   "name": "@obdesign/nuxt",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "一个基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设",
   "license": "MIT",
   "homepage": "https://github.com/JUNERDD/ob-design",
@@ -31,6 +31,7 @@
     "@obdesign/preset": "latest"
   },
   "devDependencies": {
+    "@nuxt/schema": "^3.12.4",
     "unbuild": "^2.0.0"
   }
 }

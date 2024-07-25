@@ -1,2 +1,3 @@
 .turbo
 src
+build.config.ts

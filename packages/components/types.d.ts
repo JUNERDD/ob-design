@@ -1,17 +1,17 @@
-export * from './src'
+/// <reference types="./dist/index.d.ts" />
 
 interface _Components {
-  ObButton: typeof import('./src/ob/button/index.vue')['default']
-  ObCard: typeof import('./src/ob/card/index.vue')['default']
-  ObLink: typeof import('./src/ob/link/index.vue')['default']
-  ObLoadingBox: typeof import('./src/ob/loading-box/index.vue')['default']
-  ObSpin: typeof import('./src/ob/spin/index.vue')['default']
-  ObTabGroup: typeof import('./src/ob/tab-group/index.vue')['default']
-  ObTheme: typeof import('./src/ob/theme/index.vue')['default']
-  ObModal: typeof import('./src/ob/modal/index.vue')['default']
-  ObSection: typeof import('./src/ob/section/index.vue')['default']
-  ObSectionBlock: typeof import('./src/ob/section/block.vue')['default']
-  ObSpline3d: typeof import('./src/ob/spline-3d/index.vue')['default']
+  ObButton: typeof import('./dist/ob/button/index.vue')['default']
+  ObCard: typeof import('./dist/ob/card/index.vue')['default']
+  ObLink: typeof import('./dist/ob/link/index.vue')['default']
+  ObLoadingBox: typeof import('./dist/ob/loading-box/index.vue')['default']
+  ObSpin: typeof import('./dist/ob/spin/index.vue')['default']
+  ObTabGroup: typeof import('./dist/ob/tab-group/index.vue')['default']
+  ObTheme: typeof import('./dist/ob/theme/index.vue')['default']
+  ObModal: typeof import('./dist/ob/modal/index.vue')['default']
+  ObSection: typeof import('./dist/ob/section/index.vue')['default']
+  ObSectionBlock: typeof import('./dist/ob/section/block.vue')['default']
+  ObSpline3d: typeof import('./dist/ob/spline-3d/index.vue')['default']
 }
 
 // 声明运行时全局组件类型

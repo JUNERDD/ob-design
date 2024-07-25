@@ -15,9 +15,10 @@
     "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
+    "dist/**/*.ts",
+    "dist/**/*.d.ts",
+    "dist/**/*.tsx",
+    "dist/**/*.vue",
+    "src/**/*"
   ]
 }

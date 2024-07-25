@@ -1,7 +1,7 @@
 {
   "name": "obdesign",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "一个基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设",
   "author": "JUNER",
   "license": "MIT",
