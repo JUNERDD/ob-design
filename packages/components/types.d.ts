@@ -1,4 +1,4 @@
-/// <reference types="./dist/index.d.ts" />
+export * from './dist/index'
 
 interface _Components {
   ObButton: typeof import('./dist/ob/button/index.vue')['default']

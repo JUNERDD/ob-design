@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onActivated, onDeactivated, onMounted, onUnmounted, reactive, ref } from 'vue'
+import { Application } from '@splinetool/runtime'
 import type { IObSpline3dEmits, IObSpline3dProps } from './_types'
 
 // 定义组件名
@@ -12,10 +13,10 @@ const props = defineProps<IObSpline3dProps>()
 const emit = defineEmits<IObSpline3dEmits>()
 
 // 引入
-const Application = (await import('@splinetool/runtime'))?.Application
-if (!Application) {
-  throw new Error('😱oh, 要想使用该组件, @splinetool/runtime 必须安装！')
-}
+// const Application = (await import('@splinetool/runtime'))?.Application
+// if (!Application) {
+//   throw new Error('😱oh, 要想使用该组件, @splinetool/runtime 必须安装！')
+// }
 
 // 实例对象
 const canvas = ref<null | HTMLCanvasElement>(null)

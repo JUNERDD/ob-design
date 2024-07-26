@@ -301,7 +301,7 @@ importers:
     dependencies:
       '@obdesign/components':
         specifier: latest
-        version: 0.0.8(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+        version: 0.1.0(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
       '@obdesign/preset':
         specifier: latest
         version: 0.0.7(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
@@ -8199,6 +8199,25 @@ snapshots:
       unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1)(webpack@5.93.0))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
       vue: 3.4.34(typescript@5.5.3)
       vue-router: 4.4.0(vue@3.4.34(typescript@5.5.3))
+    transitivePeerDependencies:
+      - '@unocss/webpack'
+      - '@vue/composition-api'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+
+  '@obdesign/components@0.1.0(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))':
+    dependencies:
+      '@splinetool/runtime': 1.9.0
+      '@vueuse/core': 10.11.0(vue@3.4.34(typescript@5.5.4))
+      class-variance-authority: 0.7.0
+      klona: 2.0.6
+      tailwind-merge: 2.4.0
+      unocss: 0.61.5(@unocss/webpack@0.61.5(rollup@4.18.1))(postcss@8.4.39)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))
+      vue: 3.4.34(typescript@5.5.4)
+      vue-router: 4.4.0(vue@3.4.34(typescript@5.5.4))
     transitivePeerDependencies:
       - '@unocss/webpack'
       - '@vue/composition-api'

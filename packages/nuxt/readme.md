@@ -1,10 +1,12 @@
 # @obdesign/nuxt
 
-[![NPM Version](https://img.shields.io/npm/v/%40obdesign%2Fnuxt)](https://www.npmjs.com/package/obdesign)
+[![NPM Version](https://img.shields.io/npm/v/obdesign)](https://www.npmjs.com/package/obdesign)
+
+![obdesign](https://epnzyoseqqjwdazchdcw.supabase.co/storage/v1/object/public/project/design/design.webp)
 
 一款基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设
 
-> :bulb: **组件库官网正在制作中...**
+> :bulb: **组件库官网正在制作中，预览版本：[o-b.design](https://www.o-b.design)**
 
 ## 快速入门
 
