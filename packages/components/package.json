@@ -1,7 +1,7 @@
 {
   "name": "@obdesign/components",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "一个基于 Vue 3 和 Unocss 的组件库",
   "author": "JUNER",
   "license": "MIT",

@@ -1,9 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt', '@nuxtjs/google-fonts'],
+  modules: ['@unocss/nuxt', '@nuxtjs/google-fonts', '@obdesign/nuxt'],
   extends: ['shadcn-docs-nuxt'],
-  compatibilityDate: '2024-07-06',
   experimental: {
     externalVue: true,
   },

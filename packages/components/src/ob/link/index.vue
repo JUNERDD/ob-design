@@ -18,7 +18,7 @@ const styleProps = useMergeStyleProps(_default, props, theme)
 </script>
 
 <template>
-  <a :href="props.href ?? ''" :class="cn(_style(styleProps), props.class)" @click.prevent="">
+  <a :href="props.href ?? 'javascript:;'" :class="cn(_style(styleProps), props.class)">
     <slot />
   </a>
 </template>

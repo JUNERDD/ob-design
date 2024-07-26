@@ -2,9 +2,11 @@
 
 [![NPM Version](https://img.shields.io/npm/v/obdesign)](https://www.npmjs.com/package/obdesign)
 
+![obdesign](https://epnzyoseqqjwdazchdcw.supabase.co/storage/v1/object/public/project/design/design.webp)
+
 一款基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设
 
-> :bulb: **组件库官网正在制作中...**
+> :bulb: **组件库官网正在制作中，预览版本：[o-b.design](https://www.o-b.design)**
 
 ## 项目构想
 
@@ -13,8 +15,8 @@
 ## 产品特点
 
 - [开源](https://github.com/JUNERDD/ob-design)
-- 支持高度 [主题定制化](/components/configuration)
-- 丰富的 [组件](/components/writing/components) 在你的项目中熠熠生辉
+- 支持高度 [主题定制化](https://www.o-b.design/components/themes)
+- 丰富的 [组件](https://www.o-b.design/components/base/button) 在你的项目中熠熠生辉
 - 业务场景优先、最大限度保证用户体验
 - 具备良好的 `TS` 代码编辑智能提示
 - 适配 `SSR` 环境、`SPA`环境
