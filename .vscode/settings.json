@@ -105,5 +105,6 @@
       }
     ]
   },
-  "commentTranslate.source": "Bing"
+  "commentTranslate.source": "Bing",
+  "commentTranslate.targetLanguage": "zh-CN"
 }
