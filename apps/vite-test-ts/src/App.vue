@@ -4,8 +4,10 @@ import { ElButton } from 'element-plus'
 </script>
 
 <template>
-  <main class="c-red h-screen bg-lightGray flex-center">
-    <ObButton>hello</ObButton>
+  <main class="h-screen flex-center bg-lightGray c-red">
+    <ObButton variant="danger">
+      hello
+    </ObButton>
     <ElButton>hello</ElButton>
   </main>
 </template>
