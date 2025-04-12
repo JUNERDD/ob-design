@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/obdesign)](https://www.npmjs.com/package/obdesign)
 
-![obdesign](https://epnzyoseqqjwdazchdcw.supabase.co/storage/v1/object/public/project/design/design.webp)
+![obdesign](https://raw.githubusercontent.com/JUNERDD/ob-design/refs/heads/master/ob-design-logo.webp)
 
 一款基于 Vue 3 和 Unocss 的组件库，包含 Unocss 预设
 
